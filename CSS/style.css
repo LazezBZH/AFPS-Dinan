@@ -21,6 +21,9 @@
 .red {
   color: var(--red);
 }
+#loom-companion-mv3 {
+  height: 0;
+}
 body {
   position: relative;
 }
@@ -334,7 +337,8 @@ a.active {
 /* burger */
 .sidenav {
   height: 100%;
-  width: 60%;
+  width: 70%;
+  max-width: 255px;
   position: fixed;
   z-index: 1;
   top: 0;
@@ -343,15 +347,16 @@ a.active {
   padding-top: 60px;
   transition: left 0.5s ease;
 }
-#openBtn {
+.openBtn {
   position: fixed;
   top: 1dvh;
   left: 1dvh;
   z-index: 1;
-  cursor: url("/assets/images/colombe.svg"), pointer;
+  cursor: url("/assets/images/colombe-green.svg"), pointer;
+  transition: all 0.8s ease;
 }
 .sidenav,
-#openBtn {
+.openBtn {
   display: none;
 }
 .sidenav a {
@@ -362,6 +367,7 @@ a.active {
   display: block;
   transition: 0.3s;
   font-weight: bold;
+  cursor: url("/assets/images/colombe-red.svg"), pointer;
 }
 .sidenav a:hover {
   color: var(--red);
@@ -374,7 +380,7 @@ a.active {
 .sidenavLi {
   display: flex;
   align-items: center;
-  margin-left: 3rem;
+  margin-left: 2rem;
 }
 .sidenavLi a {
   padding-left: 8px;
@@ -386,6 +392,9 @@ a.active {
 }
 .sidenav.active {
   left: 0;
+}
+.openBtn.active {
+  opacity: 0;
 }
 .sidenav .close {
   width: 30px;
@@ -400,7 +409,7 @@ a.active {
   border-radius: 50%;
   text-align: center;
   line-height: 22px;
-  cursor: url("/assets/images/colombe.svg"), pointer;
+  cursor: url("/assets/images/colombe-red.svg"), pointer;
 }
 .sidenav .close:hover {
   color: var(--red);
@@ -790,7 +799,7 @@ a.active {
     margin-left: 3dvh;
   }
   .sidenav,
-  #openBtn {
+  .openBtn {
     display: block;
   }
 }
@@ -814,7 +823,7 @@ a.active {
     margin-top: 10dvh;
   }
   .sidenav,
-  #openBtn {
+  .openBtn {
     display: block;
   }
 }

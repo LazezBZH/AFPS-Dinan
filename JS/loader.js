@@ -16,5 +16,5 @@ function stopLoader() {
     loader.style.display = "none";
     container.style.display = "block";
     sessionStorage.setItem("loaded", loaded);
-  }, 4000);
+  }, 3500);
 }
