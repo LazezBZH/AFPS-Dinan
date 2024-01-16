@@ -717,9 +717,10 @@ a.active {
 
 /* lang switcher */
 .lang-btn {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 }
 .lang-btn button {
   padding: 1rem;
@@ -815,6 +816,22 @@ a.active {
       content: "A.F.P.S DINAN (22)";
     }
   }
+}
+
+footer {
+  width: 100dvw;
+  height: 20dvh;
+  background-color: black;
+  color: white;
+  position: absolute;
+  top: 100%;
+  transform: translateY(-100%);
+}
+.lazez {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
 }
 
 /* RESPONSIVE */
