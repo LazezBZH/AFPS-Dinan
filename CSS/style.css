@@ -69,7 +69,7 @@ header {
   background-color: var(--green);
   width: 100dvw;
   height: 30dvh;
-  background-image: url(/assets/images/banner2.jpg);
+  background-image: url(/assets/images/banner2.webp);
   background-position: center;
   background-size: auto max(380px, 30dvh);
   background-repeat: no-repeat;
@@ -131,7 +131,7 @@ article {
   position: relative;
 }
 article.pdf {
-  min-width: 95dvh;
+  min-width: 45dvw;
 }
 figure {
   display: flex;
@@ -172,19 +172,19 @@ figcaption {
 /* bg sections */
 .accueil {
   min-height: 70dvh;
-  background-image: url(/assets/images/bg1.jpg);
+  background-image: url(/assets/images/bg1.webp);
 }
 .agenda {
-  background-image: url(/assets/images/bg2.jpg);
+  background-image: url(/assets/images/bg2.webp);
 }
 .comprendre {
-  background-image: url(/assets/images/bg3.jpg);
+  background-image: url(/assets/images/bg3.webp);
 }
 .liens {
-  background-image: url(/assets/images/bg4.jpg);
+  background-image: url(/assets/images/bg4.webp);
 }
 .contact {
-  background-image: url(/assets/images/bg5.jpg);
+  background-image: url(/assets/images/bg5.webp);
 }
 /* nav */
 .desk-nav li ul {
@@ -318,6 +318,15 @@ a.active {
   flex-direction: column;
   align-items: center;
   gap: 1rem;
+}
+/* articles */
+.float-right {
+  width: 35%;
+  margin: 3rem 1rem;
+  float: right;
+}
+.float-right:hover {
+  transform: scale(1.6);
 }
 /* liens */
 .liens article {
