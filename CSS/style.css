@@ -730,7 +730,7 @@ a.active {
   color: var(--red);
   background-color: black;
   line-height: 1.5rem;
-  cursor: url("/assets/images/colombe-green.svg"), pointer;
+  cursor: url("/assets/images/colombe-red.svg"), pointer;
 }
 
 @media screen and (max-width: 610px) {
@@ -825,16 +825,34 @@ a.active {
   h1 {
     position: absolute;
     top: 10px;
-    right: 10px;
+    left: 50%;
+    transform: translateX(-50%);
     font-size: 2rem;
   }
   .logo {
-    margin-top: 6dvh;
-    margin-left: 3dvh;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%, -10%);
   }
   .sidenav,
   .openBtn {
     display: block;
+  }
+  .lang-btn {
+    left: 100%;
+    transform: translateX(-100%);
+  }
+  .lang-btn button {
+    padding: 1rem;
+    border-radius: 50% 0% 100% 50%;
+    font-weight: bolder;
+    font-size: 1.2rem;
+    border: solid 2px var(--red);
+    color: var(--red);
+    background-color: black;
+    line-height: 1.5rem;
+    cursor: url("/assets/images/colombe-red.svg"), pointer;
   }
 }
 @media screen and (max-width: 600px) {
@@ -848,9 +866,6 @@ a.active {
 }
 
 @media screen and (max-width: 500px) {
-  .desk-nav {
-    display: none;
-  }
   h1 {
     width: 60dvw;
     text-align: center;
@@ -858,9 +873,5 @@ a.active {
   .logo {
     height: 15dvh;
     margin-top: 10dvh;
-  }
-  .sidenav,
-  .openBtn {
-    display: block;
   }
 }
