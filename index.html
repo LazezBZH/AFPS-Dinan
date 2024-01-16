@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site web de la branche de l'A.F.P.S de Dinan">
+    <meta name="author" content="LazezBZH" />
 
     <title>AFPS Dinan</title>
     <link rel="stylesheet" href="/CSS/style.css">
@@ -43,6 +44,9 @@
     </div>
     <div class="container">
         <header id="accueil">
+            <div class="lang-btn">
+              <button type="button" class="lang-switcher i18n" data-i18n="switch">En</button>
+            </div>
             <div class="header-top">
                 <img loading="lazy" src="assets/images/Logo-AFPS.jpg" alt="logo de l'AFPS" class="logo">
                 <h1><span class="grey">A</span><span class="green">F</span><span class="red">P</span><span class="green">S</span> <span class="grey">A</span>ntenne de <span class="grey">D</span>inan</h1>
@@ -52,26 +56,20 @@
             <div id="closeBtn"  class="close">X</div>
             <ul >
                 <li>
-                    <a href="/#accueil">Accueil</a>
+                    <a class="i18n" data-i18n="homeLink" href="/#accueil">Accueil</a>
                 </li>
                 <li>
                     <a href="/#agenda">Nos actions</a>
                     <ul>
-                        <li class="sidenavLi"><a href="/#agenda">Agenda</a></li>
+                        <li class="sidenavLi"><a class="i18n" data-i18n="actionsLink" href="/#agenda">Agenda</a></li>
                         <li class="sidenavLi"><a href="/#films">Coup de projecteur sur la Palestine</a></li>
                         <li class="sidenavLi"><a href="/#bds">Boycott Désinvestissement Sanction</a></li>
                         <li class="sidenavLi"><a href="/#order">Produits de Palestine</a></li>
                     </ul>                
                 </li>
-                <li>
-                    <a href="/#comprendre">S'informer</a>
-                </li>
-                <li>
-                    <a href="/#liens">Liens</a>
-                </li>
-                <li>
-                    <a href="/#contact">Contact</a>
-                </li>
+                <li><a class="i18n" data-i18n="comprendreLink" href="/#comprendre">S'informer</a></li>
+                <li><a id="link-4" class="active i18n" data-i18n="linksLink" href="/#liens">Liens</a></li>
+                <li><a id="link-5" class="active i18n" data-i18n="contactLink" href="/#contact">Contact</a> </li>
             </ul>
         </div>
         <div class="openBtn">
@@ -83,9 +81,9 @@
         </div>
         <nav class="desk-nav">
             <ul class="nav">
-                <li><a id="link-1" class="active" href="/#accueil">Accueil</a></li>
+                <li><a id="link-1" class="active i18n" data-i18n="homeLink" href="/#accueil">Accueil</a></li>
                 <li>
-                    <a id="link-2" href="#agenda">Nos actions</a>
+                    <a id="link-2" class="i18n" data-i18n="actionsLink" href="#/agenda">Nos actions</a>
                     <ul>
                         <li class="sidenavLi"><a href="/#agenda">Agenda</a></li>
                         <li class="sidenavLi"><a href="/#films">Coup de projecteur sur la Palestine</a></li>
@@ -93,14 +91,14 @@
                         <li class="sidenavLi"><a href="/#order">Produits de Palestine</a></li>
                     </ul>
                 </li>
-                <li><a id="link-3" href="#comprendre">S'informer</a></li>
-                <li><a id="link-4" href="#liens">Liens</a></li>
-                <li><a id="link-5" href="#contact">Contact</a> </li>
+                <li><a class="i18n" data-i18n="comprendreLink" id="link-3" href="/#comprendre">S'informer</a></li>
+                <li><a id="link-4" class="active i18n" data-i18n="linksLink" href="/#liens">Liens</a></li>
+                <li><a id="link-5" class="active i18n" data-i18n="contactLink" href="/#contact">Contact</a> </li>
             </ul>
         </nav>
         <section class="accueil heading-1" >
             <div class="title">
-                <h2>Qui sommes nous?</h2>
+                <h2 class="i18n" data-i18n="aboutUs" >Qui sommes nous?</h2>
             </div> 
             <div class="accueil-container">
                 <article>
@@ -346,11 +344,13 @@
     </div>
 
     <div id="fb-root"></div>
+    <script src="/JS/i18n.js"></script>
     <script src="/JS/script.js"></script>
     <script src="/JS/sidenav.js"></script>
     <script src="/JS/observers.js"></script>
-    <script src="/JS/loader.js"></script>
+    <!-- <script src="/JS/loader.js"></script> -->
     <script src="/JS/slider.js"></script>
+
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0" nonce="XZDJw0zo"></script>
 </body>
 </html>

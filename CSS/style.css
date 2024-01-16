@@ -715,6 +715,24 @@ a.active {
   }
 }
 
+/* lang switcher */
+.lang-btn {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.lang-btn button {
+  padding: 1rem;
+  border-radius: 0% 50% 100% 50%;
+  font-weight: bolder;
+  font-size: 1.2rem;
+  border: solid 2px var(--red);
+  color: var(--red);
+  background-color: black;
+  line-height: 1.5rem;
+  cursor: url("/assets/images/colombe-green.svg"), pointer;
+}
+
 @media screen and (max-width: 610px) {
   .loader-text {
     display: none;
