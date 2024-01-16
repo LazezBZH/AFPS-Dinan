@@ -334,7 +334,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(236, 131, 131, 0.15);
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 #page1:checked ~ .slide1 {

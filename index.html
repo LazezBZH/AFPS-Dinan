@@ -3,9 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site web de la branche de l'A.F.P.S de Dinan">
+
     <title>AFPS Dinan</title>
     <link rel="stylesheet" href="/CSS/style.css">
     <link rel="stylesheet" href="/CSS/slider.css">
+  
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/bg1.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/bg2.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/bg3.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/bg4.webp" type="image/webp">
+    <link rel="preload" fetchpriority="high" as="image" href="/assets/images/bg5.webp" type="image/webp">
 </head>
 <body class="loading">
     <div class="loader">
@@ -29,7 +37,6 @@
         <div class="bird bird18"></div>
         <div class="bird bird19"></div>
         <div class="bird bird20"></div>
-        <!-- <div class="loader-img"><img src="/assets/images/colombe-black.svg" alt=""></div> -->
         <div class="loader-text"></div>
         <div class="loader-text_small"></div>
         
@@ -37,7 +44,7 @@
     <div class="container">
         <header id="accueil">
             <div class="header-top">
-                <img src="assets/images/Logo-AFPS.jpg" alt="logo de l'AFPS" class="logo">
+                <img loading="lazy" src="assets/images/Logo-AFPS.jpg" alt="logo de l'AFPS" class="logo">
                 <h1><span class="grey">A</span><span class="green">F</span><span class="red">P</span><span class="green">S</span> <span class="grey">A</span>ntenne de <span class="grey">D</span>inan</h1>
             </div>
         </header>
@@ -106,10 +113,10 @@
                 <!-- SLIDER début -->
                     <article class="slides">
                         <div class="slider">
-                            <input name="control" id="page1" type="radio" checked />
-                            <input name="control" id="page2" type="radio" />
-                            <input name="control" id="page3" type="radio" />
-                            <input name="control" id="page4" type="radio" />
+                            <input aria-label="diaporama" name="control" id="page1" type="radio" checked />
+                            <input aria-label="diaporama" name="control" id="page2" type="radio" />
+                            <input aria-label="diaporama" name="control" id="page3" type="radio" />
+                            <input aria-label="diaporama" name="control" id="page4" type="radio" />
                             <!--first slide-->
                             <div class="slider-main slide1 animation-5">
                                 <div class="slideBg">
@@ -168,7 +175,7 @@
                         </ul>
                     </article>
                         <div class="youtube-container">
-                            <iframe class="youtube" width="450" height="253" src="https://www.youtube.com/embed/w6vdQJNwcxY?si=RokMRMHbKu3wlRhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                            <iframe loading="lazy" loading="lazy" class="youtube" width="450" height="253" src="https://www.youtube.com/embed/w6vdQJNwcxY?si=RokMRMHbKu3wlRhY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                         </div>
                 </div>
                 
@@ -181,7 +188,7 @@
                 <h2>Nos actions / Nos rencontres</h2>
             </div> 
             <div class="agenda-container">
-                <iframe class="agenda-frame" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23259d50&ctz=Europe%2FParis&src=N2UyYTc0MWY5YzExMjE3OGY1YmYxNzA5YTIxMjFjNWUzOGUyZWRmMTkzMTRkMjkxZjkzYTZiZDc3OTMwYTUwZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+                <iframe loading="lazy" title="agenda de l'A.F.P.S Dinan" class="agenda-frame" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23259d50&ctz=Europe%2FParis&src=N2UyYTc0MWY5YzExMjE3OGY1YmYxNzA5YTIxMjFjNWUzOGUyZWRmMTkzMTRkMjkxZjkzYTZiZDc3OTMwYTUwZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4" style="border:solid 1px #777" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 <p class="black-bg">Tout·e sympathisant·e est le/la bienvenu·e lors des rassemblements place Duclos chaque vendredi soir 18h.</p>
                 <p class="black-bg">Les réunions mensuelles (deuxième mercredi de chaque mois à 19h15) à la salle de la Source sont ouverts à tous/toutes que vous soyez membre, sympathisant·e ou simplement en quête d'informations.</p>
                 <p class="black-bg">Cliquez sur un événement pour l'ajouter à votre agenda ou:</p>
@@ -198,7 +205,7 @@
                         <span id="bds"></span>
                         <h3>Boycott Désinvestissement Sanction</h3>
                         <div>
-                        <img class="float-right" src="/assets/images/bds.webp" alt="">
+                        <img loading="lazy" class="float-right" src="/assets/images/bds.webp" alt="BDS">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex dolor, accumsan ut elit vitae, elementum tincidunt ante. Nulla mauris elit, porta a augue eget, bibendum lacinia arcu. Nam ac felis nunc. Proin non varius risus. Ut tincidunt nisi ut nulla imperdiet tristique. Vestibulum sapien felis, pharetra aliquam quam ut, congue volutpat justo. Pellentesque sollicitudin rhoncus diam, sed tempor dui lobortis vitae. Duis felis magna, tincidunt suscipit magna id, tempor facilisis nisl.</p></div>
                         <p>Maecenas posuere iaculis ipsum. Nam vel tellus ut justo lacinia sagittis vel eget nisl. Sed non enim non quam viverra dignissim tempus vel leo. Cras posuere pellentesque ante sit amet eleifend. Cras eget leo ut arcu convallis porta. Aliquam feugiat enim quis erat pharetra, sed egestas lectus laoreet. Suspendisse non sollicitudin elit, nec mattis nibh. Suspendisse potenti. Vestibulum lobortis nulla a varius ultrices. Nulla ut lorem sed metus eleifend tempus. Phasellus euismod nec lorem id venenatis. Nulla lobortis felis a auctor fermentum.</p>
                         <p>Maecenas nulla mauris, viverra ac urna a, tristique lobortis nisl. Sed efficitur varius eros vitae consectetur. Pellentesque posuere neque velit, ut varius metus convallis eget. Sed quis lacus id sem viverra porttitor. Donec vestibulum mauris eget ante feugiat, a euismod nunc pretium. Fusce molestie sapien in massa congue, eu dapibus lorem feugiat. Donec dapibus leo sit amet nisl ullamcorper, at congue lectus consectetur. Integer in quam orci. Cras elementum, sem egestas hendrerit dapibus, diam mi ornare velit, id iaculis mauris lorem eget lectus. Donec eget nibh risus. Aliquam eget justo non neque fringilla fermentum. Sed quis ornare turpis. Aliquam erat volutpat. Donec rutrum blandit nulla sit amet lobortis. Aenean id ex venenatis, aliquam enim sed, scelerisque felis. Mauris mollis erat non nisl faucibus volutpat.</p>
@@ -221,7 +228,7 @@
             <div class="actions"> 
                 <article class="pdf">
                     <h3>
-                        Law for Palestine publie une base de données contenant plus de 500 cas d’incitation israélienne au génocide - mise à jour en continu
+                        Law for Palestine publie une base de données contenant plus de 500 cas d'incitation israélienne au génocide - mise à jour en continu
                     </h3>                
                     <embed src="assets/documents/Law-for-Palestine-Database-of-Israeli-Incitement-to-Genocide.pdf" width="800" height="500" type="application/pdf"/>
                     <a href="https://law4palestine.org/law-for-palestine-releases-database-with-500-instances-of-israeli-incitement-to-genocide-continuously-updated/" target="_blank">Lire sur le site Law for Palestine</a>
@@ -239,19 +246,19 @@
                     <figure>
                         <div class="h3-container">
                             <h3>
-                    Un génocide est en cours à Gaza : il faut l’arrêter ! Soutien à l’Afrique du Sud dans sa requête auprès de la Cour internationale de justice
+                    Un génocide est en cours à Gaza : il faut l'arrêter ! Soutien à l'Afrique du Sud dans sa requête auprès de la Cour internationale de justice
                             </h3>          
-                            <img src="assets/images/art1.webp" alt=""> 
+                            <img loading="lazy" src="assets/images/art1.webp" alt="Gaza"> 
                         </div>  
                         <figcaption>
                             <p>
-                                Il y a maintenant trois mois, Israël lançait une agression totale contre la bande de Gaza et le peuple palestinien en riposte à l’attaque des commandos du Hamas le 7 octobre.
+                                Il y a maintenant trois mois, Israël lançait une agression totale contre la bande de Gaza et le peuple palestinien en riposte à l'attaque des commandos du Hamas le 7 octobre.
                             </p>
                             <p>
-                                Trois mois de massacres, de transferts forcés, de destructions massives : Israël bombarde, affame, tue la population de Gaza, territoire dévasté, « lieu de mort inhabitable ».Trois mois de mobilisation des peuples de nombreux pays, dont la France, pour exiger un cessez-le feu immédiat et permanent, et que s’arrête ce nettoyage ethnique programmé.
+                                Trois mois de massacres, de transferts forcés, de destructions massives : Israël bombarde, affame, tue la population de Gaza, territoire dévasté, « lieu de mort inhabitable ».Trois mois de mobilisation des peuples de nombreux pays, dont la France, pour exiger un cessez-le feu immédiat et permanent, et que s'arrête ce nettoyage ethnique programmé.
                             </p>
                             <p>
-                                Mais aussi trois mois de soutien inconditionnel (puis très modérément critique) à Israël de nos gouvernants qui n’ont toujours pas condamné les crimes de guerres, crimes contre l’humanité, crime de génocide commis par l’armée israélienne à l’encontre du peuple palestinien...
+                                Mais aussi trois mois de soutien inconditionnel (puis très modérément critique) à Israël de nos gouvernants qui n'ont toujours pas condamné les crimes de guerres, crimes contre l'humanité, crime de génocide commis par l'armée israélienne à l'encontre du peuple palestinien...
                             </p>
                             <a class="margin-link1" href="https://www.france-palestine.org/Un-genocide-est-en-cours-a-Gaza-il-faut-l-arreter-Soutien-a-l-Afrique-du-Sud" target="_blank">Lire la suite sur le site l'AFPS</a>
                         </figcaption> 
@@ -263,11 +270,11 @@
                             <h3>
                                 Rassemblements et manifestations dans toute la France / Halte au massacre à Gaza ! La France doit demander un cessez-le-feu immédiat
                             </h3>          
-                            <img src="assets/images/art2.webp" alt=""> 
+                            <img loading="lazy" src="assets/images/art2.webp" alt="Rassemblements"> 
                         </div>  
                         <figcaption>
                             <p>
-                                Mercredi 18 octobre, le Conseil d’État s’est prononcé contre l’interdiction systématique des rassemblements et manifestations en solidarité avec la Palestine. Mais, en même temps, il n’a pas désavoué le courrier envoyé aux préfets le 12 octobre par Gérald Darmanin leur demandant de les interdire. Il a donc choisi de laisser aux préfets la responsabilité d’interdire ou pas nos rassemblements et manifestations. Dans les faits les arrêtés d’interdiction continuent de pleuvoir obligeant les associations (dont l’AFPS) à utiliser les recours en référé-liberté devant les tribunaux administratifs. C’est une démarche juridique énergivore et coûteuse mais qui peut permettre de reprendre l’initiative politique tout à fait légalement après une tentative de nous faire taire...
+                                Mercredi 18 octobre, le Conseil d'État s'est prononcé contre l'interdiction systématique des rassemblements et manifestations en solidarité avec la Palestine. Mais, en même temps, il n'a pas désavoué le courrier envoyé aux préfets le 12 octobre par Gérald Darmanin leur demandant de les interdire. Il a donc choisi de laisser aux préfets la responsabilité d'interdire ou pas nos rassemblements et manifestations. Dans les faits les arrêtés d'interdiction continuent de pleuvoir obligeant les associations (dont l'AFPS) à utiliser les recours en référé-liberté devant les tribunaux administratifs. C'est une démarche juridique énergivore et coûteuse mais qui peut permettre de reprendre l'initiative politique tout à fait légalement après une tentative de nous faire taire...
                             </p>
                             <a class="margin-link1" href="https://www.france-palestine.org/Rassemblements-et-manifestations-dans-toute-la-France-Halte-au-massacre-a-Gaza" target="_blank">Lire la suite sur le site l'AFPS</a>
                         </figcaption> 
@@ -279,7 +286,7 @@
                             <h3>
                                 Pétition : Halte au massacre à Gaza !
                             </h3>          
-                            <img src="assets/images/art3.webp" alt=""> 
+                            <img loading="lazy" src="assets/images/art3.webp" alt="Pétition"> 
                         </div>  
                         <figcaption>
                             <p>
@@ -289,10 +296,10 @@
                                 - Cessez-le-feu immédiat et protection du peuple palestinien,
                             </p>
                             <p>
-                                - Convocation et renvoi de l’ambassadeur d’Israël,
+                                - Convocation et renvoi de l'ambassadeur d'Israël,
                             </p>
                             <p>
-                                - Suspension de l’accord d’association,
+                                - Suspension de l'accord d'association,
                             </p>
                             <p>
                                 - Arrêt de toute coopération militaire et sécuritaire avec Israël
