@@ -7,6 +7,9 @@
   overflow-x: hidden;
   scroll-behavior: smooth;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
 :root {
   --grey: #bbc6ce;
   --green: #259d50;
@@ -22,7 +25,10 @@
   color: var(--red);
 }
 #loom-companion-mv3 {
-  height: 0;
+  background-image: url(/assets/images/colombe-green.svg);
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 body {
   position: relative;
@@ -53,6 +59,8 @@ h2 {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  max-width: 90dvw;
+  text-align: center;
 }
 h3 {
   text-transform: uppercase;
@@ -272,13 +280,13 @@ a.active {
 .black-bg {
   background-color: black;
   color: whitesmoke;
-  padding: 0.2rem;
+  padding: 0.2rem 0.5rem;
   border-radius: 2px;
+  max-width: min(90dvw, 900px);
 }
 .black-bg::first-letter {
   font-size: inherit;
-  font-weight: inherit;
-  color: whitesmoke;
+  color: var(--red);
 }
 
 /* accueil */
@@ -632,7 +640,7 @@ a.active {
 }
 .loader-text::before {
   width: 200%;
-  animation: change-text 2000ms 1;
+  animation: change-text 1500ms 2;
   content: "A.F.P.S DINAN (22)";
   font-size: 2.2rem;
   font-weight: bold;
@@ -706,9 +714,7 @@ a.active {
     content: "A.F.P.S DINAN (22)";
   }
 }
-/* .loader-text {
-    display: none;
-  } */
+
 @media screen and (max-width: 610px) {
   .loader-text {
     display: none;
@@ -719,7 +725,7 @@ a.active {
   .loader-text_small::before {
     width: 200%;
     max-width: 280px;
-    animation: change-text-small 1000ms 1;
+    animation: change-text-small 1500ms 2;
     content: "A.F.P.S DINAN (22)";
     color: var(--red);
     box-shadow: 0 0 15px 0 var(--green);
@@ -817,6 +823,9 @@ a.active {
   .youtube {
     width: 300px;
     height: 168px;
+  }
+  figcaption {
+    padding-bottom: 4rem;
   }
 }
 
