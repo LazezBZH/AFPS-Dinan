@@ -3,6 +3,44 @@ const html = document.querySelector("html");
 
 const i18n = document.querySelectorAll(".i18n");
 
+const loader = document.querySelector(".loader");
+let container = document.querySelector(".container");
+
+if (!localStorage.getItem("lang")) {
+  localStorage.setItem("lang", "fr");
+}
+
+let chosenLang = localStorage.getItem("lang");
+
+langSwitcher.addEventListener("click", switchLang);
+
+window.addEventListener("load", initLoad);
+
+let loaded = sessionStorage.getItem("loadedAfps8") || false;
+console.log(loaded);
+if (loaded) {
+  loader.style.display = "none";
+  container.style.display = "block";
+} else if (!loaded) {
+  loader.style.display = "block";
+  container.style.display = "none";
+}
+function initLoad() {
+  if (!loaded) {
+    stopLoader();
+  }
+}
+
+function stopLoader() {
+  setTimeout(() => {
+    console.log("loaded", loaded);
+    loaded = true;
+    loader.style.display = "none";
+    container.style.display = "block";
+    sessionStorage.setItem("loadedAfps8", loaded);
+  }, 3500);
+}
+
 // i18n
 
 let fr = [
@@ -25,16 +63,6 @@ let en = [
   { aboutUs: "About us" },
 ];
 
-// choix de la langue dans localstorage
-if (!localStorage.getItem("lang")) {
-  localStorage.setItem("lang", "fr");
-}
-let chosenLang = localStorage.getItem("lang");
-
-//event pour chargement ou changement de la langue
-window.addEventListener("load", setLang);
-langSwitcher.addEventListener("click", switchLang);
-
 function setLang() {
   html.setAttribute("lang", chosenLang);
   if (html.getAttribute("lang") === "fr") {
@@ -43,6 +71,7 @@ function setLang() {
     writeInEnglish();
   }
 }
+setLang();
 //au switch
 function switchLang() {
   if (html.getAttribute("lang") === "fr") {
@@ -79,33 +108,4 @@ function writeInEnglish() {
       element.innerHTML = valeur;
     }
   });
-}
-
-// loader home = empêcher qu'il ne soit joué à chaque fois
-
-const loader = document.querySelector(".loader");
-let container = document.querySelector(".container");
-
-window.addEventListener("load", stopLoader);
-
-if (!sessionStorage.getItem("loadedAfps3")) {
-  localStorage.setItem("loadedAfps3", false);
-}
-let loaded = sessionStorage.getItem("loadedAfps3");
-
-if (loaded) {
-  loader.style.display = "none";
-  container.style.display = "block";
-} else if (!loaded) {
-  loader.style.display = "block";
-  container.style.display = "none";
-}
-sessionStorage.setItem("loadedAfps3", loaded);
-function stopLoader() {
-  setTimeout(() => {
-    loaded = true;
-    loader.style.display = "none";
-    container.style.display = "block";
-    sessionStorage.setItem("loadedAfps", loaded);
-  }, 3500);
 }
