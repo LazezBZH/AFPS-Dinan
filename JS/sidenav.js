@@ -10,13 +10,13 @@ closeBtn.addEventListener("click", closeNav);
 sidenav.addEventListener("click", closeNav);
 
 function openNav() {
-  sidenav.classList.add("active");
-  openBtn.classList.add("active");
+  sidenav.classList.add("visible");
+  openBtn.classList.add("visible");
 }
 
 function closeNav() {
-  sidenav.classList.remove("active");
-  openBtn.classList.remove("active");
+  sidenav.classList.remove("visible");
+  openBtn.classList.remove("visible");
 }
 function closeOnClicOut(e) {
   if (!sidenav.contains(e.target)) {

@@ -3,27 +3,6 @@ const html = document.querySelector("html");
 
 const i18n = document.querySelectorAll(".i18n");
 
-// loader home = empêcher qu'il ne soit joué à chaque fois
-
-const loader = document.querySelector(".loader");
-let container = document.querySelector(".container");
-
-window.addEventListener("load", stopLoader);
-let loaded = sessionStorage.getItem("loaded") || false;
-if (loaded) {
-  loader.style.display = "none";
-  container.style.display = "block";
-}
-sessionStorage.setItem("loaded", loaded);
-function stopLoader() {
-  setTimeout(() => {
-    loaded = true;
-    loader.style.display = "none";
-    container.style.display = "block";
-    sessionStorage.setItem("loaded", loaded);
-  }, 3500);
-}
-
 // i18n
 
 let fr = [
@@ -100,4 +79,25 @@ function writeInEnglish() {
       element.innerHTML = valeur;
     }
   });
+}
+
+// loader home = empêcher qu'il ne soit joué à chaque fois
+
+const loader = document.querySelector(".loader");
+let container = document.querySelector(".container");
+
+window.addEventListener("load", stopLoader);
+let loaded = sessionStorage.getItem("loadedAfps2") || false;
+if (loaded) {
+  loader.style.display = "none";
+  container.style.display = "block";
+}
+sessionStorage.setItem("loadedAfps2", loaded);
+function stopLoader() {
+  setTimeout(() => {
+    loaded = true;
+    loader.style.display = "none";
+    container.style.display = "block";
+    sessionStorage.setItem("loadedAfps", loaded);
+  }, 3500);
 }

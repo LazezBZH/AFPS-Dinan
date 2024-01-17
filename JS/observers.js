@@ -1,5 +1,5 @@
 // pour que le lien actif de la nav prenne la classe active au scroll
-const links = document.querySelectorAll("nav a");
+const links = document.querySelectorAll(".links");
 const toggle = (e) => {
   links.forEach((link) => {
     link.classList.remove("active");

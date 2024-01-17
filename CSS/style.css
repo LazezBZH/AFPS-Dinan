@@ -83,7 +83,7 @@ header {
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
-  padding: 2dvw;
+  padding: 2.5dvw;
   gap: 1dvw;
   justify-content: space-between;
   position: relative;
@@ -387,6 +387,9 @@ a.active {
   font-weight: bold;
   cursor: url("/assets/images/colombe-red.svg"), pointer;
 }
+.sidenav a.active {
+  color: var(--green);
+}
 .sidenav a:hover {
   color: var(--red);
 }
@@ -408,10 +411,10 @@ a.active {
   content: "\0025B8";
   color: rgba(245, 245, 245, 0.8);
 }
-.sidenav.active {
+.sidenav.visible {
   left: 0;
 }
-.openBtn.active {
+.openBtn.visible {
   opacity: 0;
 }
 .sidenav .close {
@@ -832,6 +835,7 @@ footer {
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
+  font-size: 0.8rem;
 }
 
 /* RESPONSIVE */
@@ -898,7 +902,11 @@ footer {
 
 @media screen and (max-width: 420px) {
   h1 {
-    top: 65px;
+    top: 60px;
     font-size: 1.6rem;
+  }
+  .logo {
+    height: 14dvh;
+    margin-top: 11dvh;
   }
 }
