@@ -29,7 +29,7 @@ let en = [
 if (!localStorage.getItem("lang")) {
   localStorage.setItem("lang", "fr");
 }
-const chosenLang = localStorage.getItem("lang");
+let chosenLang = localStorage.getItem("lang");
 
 //event pour chargement ou changement de la langue
 window.addEventListener("load", setLang);
@@ -91,6 +91,9 @@ let loaded = sessionStorage.getItem("loadedAfps2") || false;
 if (loaded) {
   loader.style.display = "none";
   container.style.display = "block";
+} else if (!loaded) {
+  loader.style.display = "block";
+  container.style.display = "none";
 }
 sessionStorage.setItem("loadedAfps2", loaded);
 function stopLoader() {
