@@ -87,7 +87,12 @@ const loader = document.querySelector(".loader");
 let container = document.querySelector(".container");
 
 window.addEventListener("load", stopLoader);
-let loaded = sessionStorage.getItem("loadedAfps2") || false;
+
+if (!sessionStorage.getItem("loadedAfps3")) {
+  localStorage.setItem("loadedAfps3", false);
+}
+let loaded = sessionStorage.getItem("loadedAfps3");
+
 if (loaded) {
   loader.style.display = "none";
   container.style.display = "block";
@@ -95,7 +100,7 @@ if (loaded) {
   loader.style.display = "block";
   container.style.display = "none";
 }
-sessionStorage.setItem("loadedAfps2", loaded);
+sessionStorage.setItem("loadedAfps3", loaded);
 function stopLoader() {
   setTimeout(() => {
     loaded = true;
