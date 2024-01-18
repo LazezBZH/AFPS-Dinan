@@ -3,6 +3,9 @@ const html = document.querySelector("html");
 
 const i18n = document.querySelectorAll(".i18n");
 
+const loader = document.querySelector(".loader");
+let container = document.querySelector(".container");
+
 if (!localStorage.getItem("lang")) {
   localStorage.setItem("lang", "fr");
 }
@@ -10,6 +13,33 @@ if (!localStorage.getItem("lang")) {
 let chosenLang = localStorage.getItem("lang");
 
 langSwitcher.addEventListener("click", switchLang);
+
+window.addEventListener("load", initLoad);
+
+let loaded = sessionStorage.getItem("loadedAfps15") || false;
+console.log(loaded);
+if (loaded) {
+  loader.style.display = "none";
+  container.style.display = "block";
+} else if (!loaded) {
+  loader.style.display = "block";
+  container.style.display = "none";
+}
+function initLoad() {
+  if (!loaded) {
+    stopLoader();
+  }
+}
+
+function stopLoader() {
+  setTimeout(() => {
+    console.log("loaded", loaded);
+    loaded = true;
+    loader.style.display = "none";
+    container.style.display = "block";
+    sessionStorage.setItem("loadedAfps15", loaded);
+  }, 3500);
+}
 
 // i18n
 

@@ -32,6 +32,7 @@ html {
 }
 body {
   position: relative;
+  min-height: 100dvh;
 }
 li {
   list-style: none;
@@ -153,6 +154,11 @@ figure img {
 }
 figcaption {
   padding-bottom: 2rem;
+}
+
+.container {
+  display: none;
+  /* display: block; */
 }
 
 /* header */
@@ -449,7 +455,7 @@ a.active {
 
 /* loader */
 
-/* .loader {
+.loader {
   min-width: 100dvw;
   min-height: 100dvh;
   background-color: var(--grey);
@@ -471,132 +477,216 @@ a.active {
 .bird1 {
   top: 50px;
   animation-delay: -2s !important;
+  -webkit-animation-delay: -2s !important;
   transform: scale(1.9);
+  -webkit-transform: scale(1.9);
+  -ms-transform: scale(1.9);
   background-image: url(/assets/images/colombe-black.svg);
 }
 .bird2 {
   top: 100px;
   animation-delay: -1s !important;
+  -webkit-animation-delay: -1s !important;
   transform: scale(2);
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
   background-image: url(/assets/images/colombe-black.svg);
 }
 .bird3 {
   top: 200px;
   animation-delay: -3s !important;
+  -webkit-animation-delay: -3s !important;
   transform: scale(2.4);
+  -webkit-transform: scale(2.4);
+  -ms-transform: scale(2.4);
   background-image: url(/assets/images/colombe-black.svg);
 }
 
 .bird4 {
   top: 50px;
   animation-delay: -12s !important;
+  -webkit-animation-delay: -12s !important;
   transform: scale(1.9);
+  -webkit-transform: scale(1.9);
+  -ms-transform: scale(1.9);
   background-image: url(/assets/images/colombe-black.svg);
 }
 .bird5 {
   top: 100px;
   animation-delay: -16s !important;
+  -webkit-animation-delay: -16s !important;
   transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
   background-image: url(/assets/images/colombe-black.svg);
 }
 .bird6 {
   top: 200px;
   animation-delay: -20s !important;
+  -webkit-animation-delay: -20s !important;
   transform: scale(2.4);
+  -webkit-transform: scale(2.4);
+  -ms-transform: scale(2.4);
   background-image: url(/assets/images/colombe-red.svg);
 }
 .bird7 {
   top: 250px;
   animation-delay: -13s !important;
+  -webkit-animation-delay: -13s !important;
   transform: scale(2.2);
+  -webkit-transform: scale(2.2);
+  -ms-transform: scale(2.2);
   background-image: url(/assets/images/colombe-red.svg);
 }
 
 .bird8 {
   top: 450px;
   animation-delay: -18s !important;
+  -webkit-animation-delay: -18s !important;
   transform: scale(0.8);
   background-image: url(/assets/images/colombe-red.svg);
 }
 .bird9 {
   top: 120px;
   animation-delay: -36s !important;
+  -webkit-animation-delay: -36s !important;
   transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
   background-image: url(/assets/images/colombe-red.svg);
 }
 .bird10 {
   top: 930px;
   animation-delay: -10s !important;
+  -webkit-animation-delay: -10s !important;
   transform: scale(2.6);
+  -webkit-transform: scale(2.6);
+  -ms-transform: scale(2.6);
   background-image: url(/assets/images/colombe-green.svg);
 }
 .bird11 {
   top: 225px;
   animation-delay: -5s !important;
+  -webkit-animation-delay: -5s !important;
   transform: scale(1.7);
+  -webkit-transform: scale(1.7);
+  -ms-transform: scale(1.7);
   background-image: url(/assets/images/colombe-green.svg);
 }
 .bird12 {
   top: 275px;
   animation-delay: -15s !important;
+  -webkit-animation-delay: -15s !important;
   transform: scale(2.4);
+  -webkit-transform: scale(2.4);
+  -ms-transform: scale(2.4);
   background-image: url(/assets/images/colombe-green.svg);
 }
 .bird13 {
   top: 375px;
   animation-delay: -8s !important;
+  -webkit-animation-delay: -8s !important;
   transform: scale(2.1);
+  -webkit-transform: scale(2.1);
+  -ms-transform: scale(2.1);
   background-image: url(/assets/images/colombe-green.svg);
 }
 
 .bird14 {
   top: 25px;
   animation-delay: -28s !important;
+  -webkit-animation-delay: -28s !important;
   transform: scale(0.8);
+  -webkit-transform: scale(0.8);
+  -ms-transform: scale(0.8);
   background-image: url(/assets/images/colombe-green.svg);
 }
 .bird15 {
   top: 275px;
   animation-delay: -6s !important;
+  -webkit-animation-delay: -6s !important;
   transform: scale(2.3);
+  -webkit-transform: scale(2.3);
+  -ms-transform: scale(2.3);
   background-image: url(/assets/images/colombe-white.svg);
 }
 .bird16 {
   top: 375px;
   animation-delay: -9s !important;
+  -webkit-animation-delay: -9s !important;
   transform: scale(1.5);
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
   background-image: url(/assets/images/colombe-white.svg);
 }
 .bird17 {
   top: 425px;
   animation-delay: -11s !important;
+  -webkit-animation-delay: -13s !important;
   transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+  -ms-transform: scale(1.3);
   background-image: url(/assets/images/colombe-white.svg);
 }
 
 .bird18 {
   top: 1325px;
   animation-delay: -26s !important;
+  -webkit-animation-delay: -26s !important;
   transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  -ms-transform: scale(0.9);
   background-image: url(/assets/images/colombe-white.svg);
 }
 .bird19 {
   top: 320px;
   animation-delay: -19s !important;
+  -webkit-animation-delay: -19s !important;
   transform: scale(1.6);
+  -webkit-transform: scale(1.6);
+  -ms-transform: scale(1.6);
   background-image: url(/assets/images/colombe-white.svg);
 }
 .bird20 {
   top: 595px;
   animation-delay: -30s !important;
+  -webkit-animation-delay: -30s !important;
   transform: scale(2);
+  -webkit-transform: scale(2);
+  -ms-transform: scale(2);
   background-image: url(/assets/images/colombe-red.svg);
 }
 .bird {
   animation: move 18s infinite alternate;
+  -moz-animation: move 18s infinite alternate;
 }
 
 @keyframes move {
+  0% {
+    left: 0%;
+  }
+  20% {
+    left: 20%;
+    top: 50%;
+  }
+  40% {
+    top: 30%;
+    left: 60%;
+  }
+  60% {
+    top: 80%;
+    left: 100%;
+  }
+  80% {
+    top: 0%;
+    left: 20%;
+  }
+  100% {
+    top: 30%;
+    left: 20%;
+  }
+}
+@-webkit-keyframes move {
   0% {
     left: 0%;
   }
@@ -640,6 +730,7 @@ a.active {
 .loader-text::before {
   width: 200%;
   animation: change-text 1500ms 2;
+  -webkit-animation: change-text 1500ms 2;
   content: "A.F.P.S DINAN (22)";
   font-size: 2.2rem;
   font-weight: bold;
@@ -713,10 +804,67 @@ a.active {
     content: "A.F.P.S DINAN (22)";
   }
 }
+@-webkit-keyframes change-text {
+  0% {
+    content: "";
+  }
+  6% {
+    content: "A";
+  }
+  12% {
+    content: "A.";
+  }
+  18% {
+    content: "A.F";
+  }
+  24% {
+    content: "A.F.";
+  }
+  30% {
+    content: "A.F.P ";
+  }
+  36% {
+    content: "A.F.P. ";
+  }
+  41% {
+    content: "A.F.P.S";
+  }
+  46% {
+    content: "A.F.P.S D";
+  }
+  52% {
+    content: "A.F.P.S DI";
+  }
+  58% {
+    content: "A.F.P.S DIN";
+  }
+  63% {
+    content: "A.F.P.S DINA";
+  }
+  69% {
+    content: "A.F.P.S DINAN";
+  }
+  74% {
+    content: "A.F.P.S DINAN (";
+  }
+  82% {
+    content: "A.F.P.S DINAN (2";
+  }
+  88% {
+    content: "A.F.P.S DINAN (22";
+  }
+  95% {
+    content: "A.F.P.S DINAN (22)";
+  }
 
+  100% {
+    content: "A.F.P.S DINAN (22)";
+  }
+}
 .loader-text_small::before {
   width: 200%;
   animation: change-text-small 1500ms 2;
+  -webkit-animation: change-text-small 1500ms 2;
   content: "A.F.P.S DINAN (22)";
   color: var(--green);
   box-shadow: 0 0 15px 0 var(--green);
@@ -787,8 +935,64 @@ a.active {
   100% {
     content: "A.F.P.S DINAN (22)";
   }
-} */
+}
+@-webkit-keyframes change-text-small {
+  0% {
+    content: "";
+  }
+  6% {
+    content: "A";
+  }
+  12% {
+    content: "A.";
+  }
+  18% {
+    content: "A.F";
+  }
+  24% {
+    content: "A.F.";
+  }
+  30% {
+    content: "A.F.P ";
+  }
+  36% {
+    content: "A.F.P. ";
+  }
+  41% {
+    content: "A.F.P.S";
+  }
+  46% {
+    content: "A.F.P.S D";
+  }
+  52% {
+    content: "A.F.P.S DI";
+  }
+  58% {
+    content: "A.F.P.S DIN";
+  }
+  63% {
+    content: "A.F.P.S DINA";
+  }
+  69% {
+    content: "A.F.P.S DINAN";
+  }
+  74% {
+    content: "A.F.P.S DINAN (";
+  }
+  82% {
+    content: "A.F.P.S DINAN (2";
+  }
+  88% {
+    content: "A.F.P.S DINAN (22";
+  }
+  95% {
+    content: "A.F.P.S DINAN (22)";
+  }
 
+  100% {
+    content: "A.F.P.S DINAN (22)";
+  }
+}
 /* lang switcher */
 .lang-btn {
   position: fixed;
@@ -808,14 +1012,14 @@ a.active {
   cursor: url("/assets/images/colombe-red.svg"), pointer;
 }
 
-/* @media screen and (max-width: 610px) {
+@media screen and (max-width: 610px) {
   .loader-text {
     display: none;
   }
   .loader-text_small {
     display: block;
   }
-} */
+}
 
 footer {
   width: 100dvw;
