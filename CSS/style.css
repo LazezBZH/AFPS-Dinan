@@ -38,10 +38,8 @@ li {
   list-style: none;
 }
 a {
-  text-decoration: none;
-  color: black;
-  font-weight: bold;
   cursor: url("/assets/images/colombe-green.svg"), pointer;
+  font-weight: bold;
 }
 h1 {
   background-color: black;
@@ -110,6 +108,8 @@ nav {
 }
 nav a {
   color: whitesmoke;
+  text-decoration: none;
+  font-weight: bold;
 }
 
 section {
@@ -465,6 +465,7 @@ a.active {
   left: 0;
   right: 0;
   z-index: 999;
+  overflow: hidden;
 }
 .bird {
   position: absolute;
@@ -491,6 +492,7 @@ a.active {
   -webkit-transform: scale(2);
   -ms-transform: scale(2);
   background-image: url(/assets/images/colombe-black.svg);
+  margin-left: 20dvw;
 }
 .bird3 {
   top: 200px;
@@ -500,6 +502,7 @@ a.active {
   -webkit-transform: scale(2.4);
   -ms-transform: scale(2.4);
   background-image: url(/assets/images/colombe-black.svg);
+  margin-left: 40dvw;
 }
 
 .bird4 {
@@ -510,6 +513,7 @@ a.active {
   -webkit-transform: scale(1.9);
   -ms-transform: scale(1.9);
   background-image: url(/assets/images/colombe-black.svg);
+  margin-left: -20dvw;
 }
 .bird5 {
   top: 100px;
@@ -528,6 +532,7 @@ a.active {
   -webkit-transform: scale(2.4);
   -ms-transform: scale(2.4);
   background-image: url(/assets/images/colombe-red.svg);
+  margin-left: 12dvw;
 }
 .bird7 {
   top: 250px;
@@ -537,6 +542,7 @@ a.active {
   -webkit-transform: scale(2.2);
   -ms-transform: scale(2.2);
   background-image: url(/assets/images/colombe-red.svg);
+  margin-left: 24dvw;
 }
 
 .bird8 {
@@ -545,6 +551,7 @@ a.active {
   -webkit-animation-delay: -18s !important;
   transform: scale(0.8);
   background-image: url(/assets/images/colombe-red.svg);
+  margin-left: 36dvw;
 }
 .bird9 {
   top: 120px;
@@ -554,6 +561,7 @@ a.active {
   -webkit-transform: scale(1.6);
   -ms-transform: scale(1.6);
   background-image: url(/assets/images/colombe-red.svg);
+  margin-left: -10dvw;
 }
 .bird10 {
   top: 930px;
@@ -572,6 +580,7 @@ a.active {
   -webkit-transform: scale(1.7);
   -ms-transform: scale(1.7);
   background-image: url(/assets/images/colombe-green.svg);
+  margin-left: 5dvw;
 }
 .bird12 {
   top: 275px;
@@ -581,6 +590,7 @@ a.active {
   -webkit-transform: scale(2.4);
   -ms-transform: scale(2.4);
   background-image: url(/assets/images/colombe-green.svg);
+  margin-left: 11dvw;
 }
 .bird13 {
   top: 375px;
@@ -590,6 +600,7 @@ a.active {
   -webkit-transform: scale(2.1);
   -ms-transform: scale(2.1);
   background-image: url(/assets/images/colombe-green.svg);
+  margin-left: 21dvw;
 }
 
 .bird14 {
@@ -600,6 +611,7 @@ a.active {
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
   background-image: url(/assets/images/colombe-green.svg);
+  margin-left: 38dvw;
 }
 .bird15 {
   top: 275px;
@@ -618,6 +630,7 @@ a.active {
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
   background-image: url(/assets/images/colombe-white.svg);
+  margin-left: -30dvw;
 }
 .bird17 {
   top: 425px;
@@ -627,6 +640,7 @@ a.active {
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
   background-image: url(/assets/images/colombe-white.svg);
+  margin-left: -2dvw;
 }
 
 .bird18 {
@@ -637,6 +651,7 @@ a.active {
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
   background-image: url(/assets/images/colombe-white.svg);
+  margin-left: 30dvw;
 }
 .bird19 {
   top: 320px;
@@ -646,6 +661,7 @@ a.active {
   -webkit-transform: scale(1.6);
   -ms-transform: scale(1.6);
   background-image: url(/assets/images/colombe-white.svg);
+  margin-left: 42dvw;
 }
 .bird20 {
   top: 595px;
@@ -659,6 +675,7 @@ a.active {
 .bird {
   animation: move 18s infinite alternate;
   -moz-animation: move 18s infinite alternate;
+  z-index: -1;
 }
 
 @keyframes move {
@@ -670,11 +687,11 @@ a.active {
     top: 50%;
   }
   40% {
-    top: 30%;
+    top: 50%;
     left: 60%;
   }
   60% {
-    top: 80%;
+    top: 100%;
     left: 100%;
   }
   80% {
@@ -716,13 +733,15 @@ a.active {
 }
 .loader-text,
 .loader-text_small {
-  width: 90%;
+  /* width: 90%; */
   position: absolute;
   top: 50%;
-  left: 80%;
+  left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
-  padding: 2rem;
+  padding: 0;
+  line-height: 5rem;
+  text-align: center;
 }
 .loader-text_small {
   left: 70%;
@@ -1036,6 +1055,11 @@ footer {
   right: 15px;
   transform: translateY(-50%);
   font-size: 0.8rem;
+}
+a.lazez {
+  color: initial;
+  text-decoration: underline;
+  padding: 0.5rem;
 }
 
 /* RESPONSIVE */
