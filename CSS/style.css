@@ -733,19 +733,19 @@ a.active {
 }
 .loader-text,
 .loader-text_small {
-  /* width: 90%; */
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 99;
-  padding: 0;
-  line-height: 5rem;
+  padding: 1rem;
+  line-height: rem;
   text-align: center;
 }
-.loader-text_small {
+/* .loader-text_small {
   left: 70%;
-}
+} */
 .loader-text::before {
   width: 200%;
   animation: change-text 1500ms 2;
@@ -756,19 +756,21 @@ a.active {
   color: var(--red);
   box-shadow: 0 0 15px 0 var(--green);
   background: inherit;
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   border-radius: 5px;
   text-align: center;
   -webkit-text-stroke: 1px var(--green);
   text-transform: uppercase;
   margin: auto;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 @keyframes change-text {
   0% {
     content: "";
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--red);
   }
   6% {
     content: "A";
@@ -796,6 +798,8 @@ a.active {
   }
   52% {
     content: "A.F.P.S DI";
+    color: var(--red);
+    -webkit-text-stroke: 1px var(--green);
   }
   58% {
     content: "A.F.P.S DIN";
@@ -811,12 +815,16 @@ a.active {
   }
   82% {
     content: "A.F.P.S DINAN (2";
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--red);
   }
   88% {
     content: "A.F.P.S DINAN (22";
   }
   95% {
     content: "A.F.P.S DINAN (22)";
+    color: black;
+    -webkit-text-stroke: 1px var(--grey);
   }
 
   100% {
@@ -826,6 +834,8 @@ a.active {
 @-webkit-keyframes change-text {
   0% {
     content: "";
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--red);
   }
   6% {
     content: "A";
@@ -853,6 +863,8 @@ a.active {
   }
   52% {
     content: "A.F.P.S DI";
+    color: var(--red);
+    -webkit-text-stroke: 1px var(--green);
   }
   58% {
     content: "A.F.P.S DIN";
@@ -868,12 +880,16 @@ a.active {
   }
   82% {
     content: "A.F.P.S DINAN (2";
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--red);
   }
   88% {
     content: "A.F.P.S DINAN (22";
   }
   95% {
     content: "A.F.P.S DINAN (22)";
+    color: black;
+    -webkit-text-stroke: 1px var(--grey);
   }
 
   100% {
@@ -881,26 +897,29 @@ a.active {
   }
 }
 .loader-text_small::before {
-  width: 200%;
+  /* width: 90%;
+  height: 200%; */
   animation: change-text-small 1500ms 2;
   -webkit-animation: change-text-small 1500ms 2;
   content: "A.F.P.S DINAN (22)";
-  color: var(--green);
+  color: var(--red);
   box-shadow: 0 0 15px 0 var(--green);
   background: inherit;
-  backdrop-filter: blur(20px);
+  /* backdrop-filter: blur(20px); */
   border-radius: 5px;
-  text-align: center;
+  /* text-align: center; */
   -webkit-text-stroke: 1px var(--green);
   text-transform: uppercase;
   margin: auto;
   padding: 1rem;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: rgba(255, 255, 255, 0.4);
 }
 
 @keyframes change-text-small {
   0% {
     content: "";
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--red);
   }
   6% {
     content: "A";
@@ -928,6 +947,8 @@ a.active {
   }
   52% {
     content: "A.F.P.S DI";
+    color: var(--red);
+    -webkit-text-stroke: 1px var(--green);
   }
   58% {
     content: "A.F.P.S DIN";
@@ -943,12 +964,16 @@ a.active {
   }
   82% {
     content: "A.F.P.S DINAN (2";
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--red);
   }
   88% {
     content: "A.F.P.S DINAN (22";
   }
   95% {
     content: "A.F.P.S DINAN (22)";
+    color: black;
+    -webkit-text-stroke: 1px var(--grey);
   }
 
   100% {
@@ -958,6 +983,8 @@ a.active {
 @-webkit-keyframes change-text-small {
   0% {
     content: "";
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--red);
   }
   6% {
     content: "A";
@@ -985,6 +1012,8 @@ a.active {
   }
   52% {
     content: "A.F.P.S DI";
+    color: var(--red);
+    -webkit-text-stroke: 1px var(--green);
   }
   58% {
     content: "A.F.P.S DIN";
@@ -1000,12 +1029,16 @@ a.active {
   }
   82% {
     content: "A.F.P.S DINAN (2";
+    color: var(--green);
+    -webkit-text-stroke: 1px var(--red);
   }
   88% {
     content: "A.F.P.S DINAN (22";
   }
   95% {
     content: "A.F.P.S DINAN (22)";
+    color: black;
+    -webkit-text-stroke: 1px var(--grey);
   }
 
   100% {
