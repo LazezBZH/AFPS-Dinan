@@ -177,7 +177,22 @@ figcaption {
   display: flex;
   justify-content: space-evenly;
 }
-
+.title-container {
+  position: relative;
+  overflow: hidden;
+}
+.subtitle {
+  position: absolute;
+  left: 50%;
+  bottom: 5px;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 1rem;
+}
+.bigger {
+  font-size: 1.2rem;
+  font-weight: bolder;
+}
 /* bg sections */
 .accueil {
   min-height: 70dvh;
@@ -1104,14 +1119,25 @@ a.lazez {
   .desk-nav {
     display: none;
   }
-  h1 {
+  .title-container {
     width: auto;
     min-width: 320px;
     position: absolute;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
+  }
+  .title-container h1 {
     font-size: 1.8rem;
+    padding-bottom: 1.5rem;
+  }
+  .subtitle {
+    width: 100%;
+    font-size: 1rem;
+    text-align: center;
+  }
+  .bigger {
+    font-size: 1rem;
   }
   .logo {
     position: absolute;
@@ -1150,20 +1176,22 @@ a.lazez {
 }
 
 @media screen and (max-width: 500px) {
-  h1 {
+  .title-container {
     top: 50px;
     width: 60dvw;
     text-align: center;
   }
   .logo {
-    height: 15dvh;
+    height: 12dvh;
     margin-top: 10dvh;
   }
 }
 
 @media screen and (max-width: 420px) {
-  h1 {
+  .title-container {
     top: 65px;
+  }
+  .title-container h1 {
     font-size: 1.6rem;
   }
   .logo {
