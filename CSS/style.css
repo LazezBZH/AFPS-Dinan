@@ -26,9 +26,9 @@ html::-webkit-scrollbar {
 }
 html {
   background-image: url(/assets/images/colombe-green.svg);
-  background-size: 70%;
+  background-size: 45%;
   background-repeat: no-repeat;
-  background-position: center bottom;
+  background-position: center calc(100% - 30px);
 }
 body {
   position: relative;
@@ -1075,24 +1075,28 @@ a.active {
 
 footer {
   width: 100dvw;
-  height: 20dvh;
+  height: 30px;
   background-color: black;
   color: white;
-  position: absolute;
-  top: 100%;
-  transform: translateY(-100%);
+  position: fixed;
+  bottom: 0%;
+  padding: 0 15px;
+  /* transform: translateY(-100%); */
+  display: flex;
+  align-items: center;
+  justify-content: right;
 }
 .lazez {
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   right: 15px;
-  transform: translateY(-50%);
+  transform: translateY(-50%); */
   font-size: 0.8rem;
 }
 a.lazez {
   color: initial;
   text-decoration: underline;
-  padding: 0.5rem;
+  padding: 0.1rem 0.5rem;
 }
 
 /* RESPONSIVE */
