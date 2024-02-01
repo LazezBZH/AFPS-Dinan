@@ -44,7 +44,7 @@ a {
 h1 {
   background-color: black;
   color: whitesmoke;
-  padding: 1.5dvw;
+  padding: 20px;
   border-radius: 15px;
   font-size: 3rem;
 }
@@ -75,10 +75,10 @@ p::first-letter {
 header {
   background-color: var(--green);
   width: 100dvw;
-  height: 30dvh;
+  height: 31dvh;
   background-image: url(/assets/images/banner2.webp);
   background-position: center;
-  background-size: auto max(380px, 30dvh);
+  background-size: auto max(380px, 31dvh);
   background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
@@ -163,6 +163,8 @@ figcaption {
 
 /* header */
 .header-top {
+  width: 95%;
+  margin: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -182,6 +184,8 @@ figcaption {
   overflow: hidden;
 }
 .subtitle {
+  width: 100%;
+  text-align: center;
   position: absolute;
   left: 50%;
   bottom: 5px;
@@ -1096,16 +1100,11 @@ footer {
   position: fixed;
   bottom: 0%;
   padding: 0 15px;
-  /* transform: translateY(-100%); */
   display: flex;
   align-items: center;
   justify-content: right;
 }
 .lazez {
-  /* position: absolute;
-  top: 50%;
-  right: 15px;
-  transform: translateY(-50%); */
   font-size: 0.8rem;
 }
 a.lazez {
@@ -1118,6 +1117,9 @@ a.lazez {
 @media screen and (max-width: 800px) {
   .desk-nav {
     display: none;
+  }
+  header {
+    height: 33dvh;
   }
   .title-container {
     width: auto;
@@ -1132,9 +1134,7 @@ a.lazez {
     padding-bottom: 1.5rem;
   }
   .subtitle {
-    width: 100%;
     font-size: 1rem;
-    text-align: center;
   }
   .bigger {
     font-size: 1rem;
@@ -1187,7 +1187,7 @@ a.lazez {
   }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 460px) {
   .title-container {
     top: 65px;
   }
