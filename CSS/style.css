@@ -44,7 +44,7 @@ a {
 h1 {
   background-color: black;
   color: whitesmoke;
-  padding: 20px;
+  padding: 5px 20px 20px 20px;
   border-radius: 15px;
   font-size: 3rem;
 }
@@ -1119,7 +1119,7 @@ a.lazez {
     display: none;
   }
   header {
-    height: 33dvh;
+    height: 40dvh;
   }
   .title-container {
     width: auto;
