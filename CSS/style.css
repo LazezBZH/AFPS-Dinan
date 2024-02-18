@@ -1112,7 +1112,26 @@ a.lazez {
   text-decoration: underline;
   padding: 0.1rem 0.5rem;
 }
-
+.rss {
+  position: absolute;
+  left: 50%;
+  top: 0%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+.rss-txt {
+  position: absolute;
+  left: 50%;
+  top: 18px;
+  transform: translateX(-50%);
+  z-index: 1;
+  color: rgb(95, 50, 13);
+  font-weight: bold;
+  font-size: 0.8rem;
+}
+.rss img {
+  width: 30px;
+}
 /* RESPONSIVE */
 @media screen and (max-width: 800px) {
   .desk-nav {
