@@ -1,21 +1,22 @@
-<?xml version="1.0" encoding="iso-8859-1" ?>
-<rss version="2.0">
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
  <title>AFPS Dinan</title>
  <link>https://afps-dinan.netlify.app/</link>
  <description>Flux d'actualités du site AFPS Dinan</description>
 <language>fr</language>
 <copyright>Copyright 2024 Lazez BZH Sites Web</copyright>
-<lastBuildDate>Sun, 18 Feb 2017 13:43:34 GMT</lastBuildDate>
+<lastBuildDate>Sun, 18 Feb 2024 13:43:34 GMT</lastBuildDate>
 <image>
 <title>AFPS Dinan</title>
 <url>
-https://afps-dinan.netlify.app/assets/images/25 janvier 2024.png
+https://afps-dinan.netlify.app/assets/images/meta.png
 </url>  
 <link>
-https://afps-dinan.netlify.app?partner=rss&emc=rss
+https://afps-dinan.netlify.app/
 </link>
 </image>
+<atom:link href="https://afps-dinan.netlify.app/rss.xml" rel="self" type="application/rss+xml" />
 <item>
  <title>Article 1</title>
  <link>https://afps-dinan.netlify.app/#article1</link>
