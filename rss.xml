@@ -6,7 +6,7 @@
  <description>Flux d'actualités du site AFPS Dinan</description>
 <language>fr</language>
 <copyright>Copyright 2024 Lazez BZH Sites Web</copyright>
-<lastBuildDate>Mon, 19 Feb 2024 18:43:34 GMT</lastBuildDate>
+<lastBuildDate>Mon, 19 Feb 2024 22:43:34 GMT</lastBuildDate>
 <image>
 <title>AFPS Dinan</title>
 <url>
@@ -19,35 +19,29 @@ https://afps-dinan.netlify.app/
 <atom:link href="https://afps-dinan.netlify.app/rss.xml" rel="self" type="application/rss+xml" />
 <item>
  <title>Notre association</title>
- <link>https://afps-dinan.netlify.app/#article1</link>
+ <link>https://afps-dinan.netlify.app?id=1</link>
  <guid isPermaLink="true">https://afps-dinan.netlify.app/#article1</guid>
  <pubDate>Mon, 19 Fev 2024 12:00:00 GMT</pubDate>
  <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex dolor, accumsan ut elit vitae, elementum tincidunt ante. Nulla mauris elit, porta a augue eget, bibendum lacinia arcu. Nam ac felis nunc. Proin non varius risus. Ut tincidunt nisi ut nulla imperdiet tristique. Vestibulum sapien felis, pharetra aliquam quam ut, congue volutpat justo. Pellentesque sollicitudin rhoncus diam, sed tempor dui lobortis vitae. Duis felis magna, tincidunt suscipit magna id, tempor facilisis nisl.</description>
 </item>
-<item>
- <title>NOTRE ASSOCIATION/title>
- <link>https://afps-dinan.netlify.app?id=1</link>
- <guid isPermaLink="true">https://afps-dinan.netlify.app/#article2</guid>
- <pubDate>Mon, 19 Fev 2024 13:00:00 GMT</pubDate>
- <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex dolor, accumsan ut elit vitae, elementum tincidunt ante. Nulla mauris elit, porta a augue eget, bibendum lacinia arcu. Nam ac felis nunc. Proin non varius risus. Ut tincidunt nisi ut nulla imperdiet tristique. Vestibulum sapien felis, pharetra aliquam quam ut, congue volutpat justo. Pellentesque sollicitudin rhoncus diam, sed tempor dui lobortis vitae. Duis felis magna, tincidunt suscipit magna id, tempor facilisis nisl...</description>
-</item>
+
 <item>
  <title>Nos actions en bref</title>
  <link>https://afps-dinan.netlify.app?id=2</link>
- <guid isPermaLink="true">https://afps-dinan.netlify.app/#article3</guid>
+ <guid isPermaLink="true">https://afps-dinan.netlify.app?id=3</guid>
  <pubDate>Mon, 19 Fev 2024 14:00:00 GMT</pubDate>
  <description>Rassemblement hebdomadaire de soutien au cessez-le-feu; Réunion mensuelle;...</description>
 </item>
 <item>
  <title>Coup de projecteur sur la Palestine</title>
  <link>https://afps-dinan.netlify.app?id=4</link>
- <guid isPermaLink="true">https://afps-dinan.netlify.app/#article4</guid>
+ <guid isPermaLink="true">https://afps-dinan.netlify.app?id=4</guid>
  <pubDate>Mon, 19 Fev 2024 15:00:00 GMT</pubDate>
  <description>Maecenas posuere iaculis ipsum. Nam vel tellus ut justo lacinia sagittis vel eget nisl. Sed non enim non quam viverra dignissim tempus vel leo. Cras posuere pellentesque ante sit amet eleifend. Cras eget leo ut arcu convallis porta. Aliquam feugiat enim quis erat pharetra, sed egestas lectus laoreet. Suspendisse non sollicitudin elit, nec mattis nibh. Suspendisse potenti. Vestibulum lobortis nulla a varius ultrices. Nulla ut lorem sed metus eleifend tempus. Phasellus euismod nec lorem id venenatis. Nulla lobortis felis a auctor fermentum.</description>
 </item>
  <title>LAW FOR PALESTINE PUBLIE UNE BASE DE DONNÉES CONTENANT PLUS DE 500 CAS D'INCITATION ISRAÉLIENNE AU GÉNOCIDE - MISE À JOUR EN CONTINU</title>
  <link>https://afps-dinan.netlify.app?id=5</link>
- <guid isPermaLink="true">https://afps-dinan.netlify.app/#article4</guid>
+ <guid isPermaLink="true">https://afps-dinan.netlify.app?id=5</guid>
  <pubDate>Sun, 18 Fev 2024 14:00:00 GMT</pubDate>
  <description>500 CAS D'INCITATION ISRAÉLIENNE AU GÉNOCIDE</description>
 </item>
