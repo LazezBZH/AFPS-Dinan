@@ -1167,6 +1167,11 @@ a.lazez {
   font-size: 1.5rem;
   font-weight: bolder;
 }
+.plus-btn {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
 
 /* RESPONSIVE */
 @media screen and (max-width: 800px) {

@@ -1,4 +1,5 @@
 const nav = document.querySelector("nav");
+const plusBtn = document.querySelectorAll(".plus-btn");
 
 if (query("id")) {
   nav.style.position = "fixed";
@@ -19,4 +20,12 @@ function fixeNav() {
     nav.style.position = "fixed";
     nav.style.top = "0";
   }
+}
+
+plusBtn.forEach((item) => {
+  item.addEventListener("click", openArticle);
+});
+function openArticle(e) {
+  let target = e.target.value;
+  window.location.href = "/?id=" + target;
 }
