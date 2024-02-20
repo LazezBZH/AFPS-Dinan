@@ -31,5 +31,6 @@ console.log(id);
 const closeArticle = document.querySelector(".close-article");
 closeArticle.addEventListener("click", closeThisArticle);
 function closeThisArticle() {
-  window.location.href = "/";
+  // window.location.href = "/";
+  window.history.back();
 }
