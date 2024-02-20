@@ -36,6 +36,7 @@ const toggleLinks1 = function (entries) {
         link.classList.remove("active");
       });
       link1.classList.add("active");
+      window.location.href = "/#accueil";
     }
   });
 };
@@ -48,6 +49,7 @@ const toggleLinks2 = function (entries) {
         link.classList.remove("active");
       });
       link2.classList.add("active");
+      window.location.href = "/#agenda";
     }
   });
 };
@@ -60,6 +62,7 @@ const toggleLinks3 = function (entries) {
         link.classList.remove("active");
       });
       link3.classList.add("active");
+      window.location.href = "/#comprendre";
     }
   });
 };
@@ -72,6 +75,7 @@ const toggleLinks4 = function (entries) {
         link.classList.remove("active");
       });
       link4.classList.add("active");
+      window.location.href = "/#liens";
     }
   });
 };
@@ -84,6 +88,7 @@ const toggleLinks5 = function (entries) {
         link.classList.remove("active");
       });
       link5.classList.add("active");
+      window.location.href = "/#contact";
     }
   });
 };
@@ -94,13 +99,15 @@ const observer3 = new IntersectionObserver(toggleLinks3, options);
 const observer4 = new IntersectionObserver(toggleLinks4, options);
 const observer5 = new IntersectionObserver(toggleLinks5, options);
 
-let target1 = document.querySelector(".heading-1");
-observer1.observe(target1);
-let target2 = document.querySelector(".heading-2");
-observer2.observe(target2);
-let target3 = document.querySelector(".heading-3");
-observer3.observe(target3);
-let target4 = document.querySelector(".heading-4");
-observer4.observe(target4);
-let target5 = document.querySelector(".heading-5");
-observer5.observe(target5);
+if (!query("id")) {
+  let target1 = document.querySelector(".heading-1");
+  observer1.observe(target1);
+  let target2 = document.querySelector(".heading-2");
+  observer2.observe(target2);
+  let target3 = document.querySelector(".heading-3");
+  observer3.observe(target3);
+  let target4 = document.querySelector(".heading-4");
+  observer4.observe(target4);
+  let target5 = document.querySelector(".heading-5");
+  observer5.observe(target5);
+}
