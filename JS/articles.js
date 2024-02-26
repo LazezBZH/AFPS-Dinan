@@ -29,7 +29,9 @@ function stopLoaderArt() {
 console.log(id);
 
 const closeArticle = document.querySelector(".close-article");
-closeArticle.addEventListener("click", closeThisArticle);
+if (closeArticle) {
+  closeArticle.addEventListener("click", closeThisArticle);
+}
 function closeThisArticle() {
   if (window.history.length > 1) {
     window.history.back();

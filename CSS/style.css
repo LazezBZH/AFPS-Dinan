@@ -1168,11 +1168,13 @@ a.lazez {
   background-color: var(--green);
   font-size: 1.5rem;
   font-weight: bolder;
+  cursor: zoom-out;
 }
 .plus-btn {
   position: absolute;
   right: 10px;
   top: 10px;
+  cursor: zoom-in;
 }
 
 /* RESPONSIVE */
