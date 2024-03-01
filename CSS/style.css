@@ -199,6 +199,33 @@ figcaption {
   font-weight: bolder;
 }
 /* bg sections */
+.actu {
+  width: 90dvw;
+  max-width: 800px;
+  background-color: var(--green);
+  display: flex;
+  align-items: center;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  justify-content: space-between;
+  border-radius: 2px 15px;
+}
+.actu p {
+  text-transform: uppercase;
+  flex-grow: 0;
+  padding-right: 15px;
+}
+.actu span {
+  text-align: center;
+  flex-grow: 1;
+}
+.actu p::first-letter {
+  color: white;
+}
+.actu a {
+  color: black;
+}
 .accueil {
   min-height: 70dvh;
   background-image: url(/assets/images/bg1.webp);
@@ -250,6 +277,7 @@ a.active {
 .title {
   display: flex;
   justify-content: center;
+  position: relative;
 }
 
 /* liens */
@@ -1115,20 +1143,21 @@ a.lazez {
 }
 .rss {
   position: absolute;
-  left: 50%;
+  right: 5px;
   top: 5px;
-  transform: translateX(-50%);
   z-index: 1;
 }
 .rss-txt {
+  width: 25px;
   position: absolute;
-  left: 50%;
-  top: 22px;
-  transform: translateX(-50%);
+  right: 8px;
+  top: 35px;
   z-index: 1;
   color: var(--green);
+  background-color: orange;
   font-weight: bold;
   font-size: 0.8rem;
+  border-radius: 2px;
 }
 .rss img {
   width: 30px;
@@ -1179,6 +1208,24 @@ a.lazez {
 
 /* RESPONSIVE */
 @media screen and (max-width: 800px) {
+  .rss {
+    position: absolute;
+    left: 50%;
+    top: 5px;
+    transform: translateX(-50%);
+    z-index: 1;
+    width: 30px;
+  }
+  .rss-txt {
+    position: absolute;
+    left: calc(50% + 35px);
+    top: 15px;
+    transform: translateX(-50%);
+    z-index: 1;
+    color: var(--green);
+    font-weight: bold;
+    font-size: 0.8rem;
+  }
   .desk-nav {
     display: none;
   }
