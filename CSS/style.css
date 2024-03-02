@@ -194,6 +194,16 @@ figcaption {
   color: white;
   font-size: 1rem;
 }
+.link-top {
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+}
+.link-top a {
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
 .bigger {
   font-size: 1.2rem;
   font-weight: bolder;
@@ -215,6 +225,7 @@ figcaption {
   text-transform: uppercase;
   flex-grow: 0;
   padding-right: 15px;
+  padding-left: 5px;
 }
 .actu span {
   text-align: center;
@@ -1303,6 +1314,16 @@ a.lazez {
   .logo {
     height: 12dvh;
     margin-top: 10dvh;
+  }
+  .link-top {
+    bottom: 50%;
+    background-color: rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    padding: 3px;
+    transform: translateY(50%);
+  }
+  .link-top a {
+    color: black;
   }
 }
 
