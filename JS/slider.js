@@ -11,7 +11,7 @@ let count2 = 1;
 setInterval(function () {
   document.getElementById("actu" + count).checked = true;
   count2++;
-  if (count > 3) {
+  if (count > 5) {
     count = 1;
   }
 }, 1000);

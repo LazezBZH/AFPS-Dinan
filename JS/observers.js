@@ -36,7 +36,7 @@ const toggleLinks1 = function (entries) {
         link.classList.remove("active");
       });
       link1.classList.add("active");
-      window.location.href = "/#accueil";
+      // window.location.href = "/#accueil";
     }
   });
 };
@@ -49,7 +49,8 @@ const toggleLinks2 = function (entries) {
         link.classList.remove("active");
       });
       link2.classList.add("active");
-      window.location.href = "/#agenda";
+
+      // window.location.href = "/#agenda";
     }
   });
 };
@@ -62,7 +63,7 @@ const toggleLinks3 = function (entries) {
         link.classList.remove("active");
       });
       link3.classList.add("active");
-      window.location.href = "/#comprendre";
+      // window.location.href = "/#comprendre";
     }
   });
 };
@@ -75,7 +76,7 @@ const toggleLinks4 = function (entries) {
         link.classList.remove("active");
       });
       link4.classList.add("active");
-      window.location.href = "/#liens";
+      // window.location.href = "/#liens";
     }
   });
 };
@@ -88,7 +89,7 @@ const toggleLinks5 = function (entries) {
         link.classList.remove("active");
       });
       link5.classList.add("active");
-      window.location.href = "/#contact";
+      // window.location.href = "/#contact";
     }
   });
 };

@@ -1,12 +1,13 @@
 :root {
-  --grey: #bbc6ce;
+  --grey: rgb(187, 198, 206);
   --green: #259d50;
   --lowgreen: rgba(37, 157, 81, 0.92);
   --red: #ce061f;
+  --lowbrown: rgba(211, 192, 177, 0.8);
 }
 
 article.slides {
-  background: rgba(211, 192, 177, 0.8);
+  background: var(--lowbrown);
   margin-bottom: 1rem;
   border-radius: 10px;
   backdrop-filter: blur(15px);
@@ -64,13 +65,15 @@ article.slides {
 .link1,
 .link2,
 .link3,
-.link4 {
+.link4,
+.link5 {
   display: none;
 }
 
 #actu1:checked ~ .link1,
 #actu2:checked ~ .link2,
 #actu3:checked ~ .link3,
-#actu4:checked ~ .link4 {
+#actu4:checked ~ .link4,
+#actu5:checked ~ .link5 {
   display: block;
 }

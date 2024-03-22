@@ -15,6 +15,7 @@ html::-webkit-scrollbar {
   --green: #259d50;
   --lowgreen: rgba(37, 157, 81, 0.92);
   --red: #ce061f;
+  --black: black;
 }
 .grey {
   color: var(--grey);
@@ -26,7 +27,7 @@ html::-webkit-scrollbar {
   color: var(--red);
 }
 html {
-  background-image: url(/assets/images/colombe-green.svg);
+  background-image: url(../assets/images/colombe-green.svg);
   background-size: 45%;
   background-repeat: no-repeat;
   background-position: center calc(100% - 30px);
@@ -39,8 +40,12 @@ li {
   list-style: none;
 }
 a {
-  cursor: url("/assets/images/colombe-green.svg"), pointer;
+  cursor: url("../assets/images/colombe-green.svg"), pointer;
   font-weight: bold;
+}
+a.normal-link {
+  color: var(--green);
+  text-decoration: underline var(--green);
 }
 h1 {
   background-color: black;
@@ -71,13 +76,19 @@ p::first-letter {
   font-size: 1.5rem;
   font-weight: bold;
   color: var(--green);
+  text-transform: uppercase;
+}
+p.no-maj::first-letter {
+  font-size: initial;
+  font-weight: initial;
+  color: initial;
 }
 
 header {
   background-color: var(--green);
   width: 100dvw;
   height: 31dvh;
-  background-image: url(/assets/images/banner2.webp);
+  background-image: url(../assets/images/banner2.webp);
   background-position: center;
   background-size: auto max(380px, 31dvh);
   background-repeat: no-repeat;
@@ -140,9 +151,10 @@ article {
   max-width: 500px;
   position: relative;
 }
-article.pdf {
-  min-width: 45dvw;
+article .more-pad:last-child {
+  padding-bottom: 1rem;
 }
+
 figure {
   display: flex;
   flex-direction: column;
@@ -228,7 +240,7 @@ figcaption {
   padding-left: 5px;
 }
 .actu span {
-  text-align: center;
+  text-align: left;
   flex-grow: 1;
 }
 .actu p::first-letter {
@@ -236,22 +248,23 @@ figcaption {
 }
 .actu a {
   color: black;
+  cursor: url("../assets/images/colombe-white.svg"), pointer;
 }
 .accueil {
   min-height: 70dvh;
-  background-image: url(/assets/images/bg1.webp);
+  background-image: url(../assets/images/bg1.webp);
 }
 .agenda {
-  background-image: url(/assets/images/bg2.webp);
+  background-image: url(../assets/images/bg2.webp);
 }
 .comprendre {
-  background-image: url(/assets/images/bg3.webp);
+  background-image: url(../assets/images/bg3.webp);
 }
 .liens {
-  background-image: url(/assets/images/bg4.webp);
+  background-image: url(../assets/images/bg4.webp);
 }
 .contact {
-  background-image: url(/assets/images/bg5.webp);
+  background-image: url(../assets/images/bg5.webp);
 }
 /* nav */
 .desk-nav li ul {
@@ -319,9 +332,7 @@ a.active {
 .youtube-container {
   display: flex;
   justify-content: center;
-}
-.youtube {
-  margin-top: 1rem;
+  align-items: center;
 }
 
 /* agenda */
@@ -368,7 +379,7 @@ a.active {
   gap: 1dvh;
 }
 
-/* actions */
+/* actions comprendre */
 .actions {
   width: 90dvw;
   max-width: 1200px;
@@ -379,6 +390,24 @@ a.active {
   padding: 2dvh;
   border-radius: 5px;
   gap: 1dvh;
+}
+.futher {
+  width: 90dvw;
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 2dvh;
+  border-radius: 5px;
+  gap: 1dvh;
+}
+.pdf {
+  max-width: 45%;
+}
+.pdf embed {
+  width: 100%;
+  height: 300px;
 }
 
 .h3-container {
@@ -394,12 +423,15 @@ a.active {
   float: right;
 }
 .float-right:hover {
-  transform: scale(1.6);
+  transform: scale(1.2);
 }
 /* liens */
 .liens article {
   max-width: 85%;
   align-items: start;
+}
+.liens {
+  padding-bottom: 5rem;
 }
 .liens h3 {
   margin-bottom: 1rem;
@@ -408,7 +440,7 @@ a.active {
   margin-bottom: 0.5rem;
 }
 .link-container {
-  padding: 2rem 0;
+  padding: 0.5rem 0;
 }
 
 /* burger */
@@ -430,7 +462,7 @@ a.active {
   top: 1dvh;
   left: 1dvh;
   z-index: 1;
-  cursor: url("/assets/images/colombe-green.svg"), pointer;
+  cursor: url("../assets/images/colombe-green.svg"), pointer;
   transition: all 0.8s ease;
 }
 .sidenav,
@@ -445,7 +477,7 @@ a.active {
   display: block;
   transition: 0.3s;
   font-weight: bold;
-  cursor: url("/assets/images/colombe-red.svg"), pointer;
+  cursor: url("../assets/images/colombe-red.svg"), pointer;
 }
 .sidenav a.active {
   color: var(--green);
@@ -490,7 +522,7 @@ a.active {
   border-radius: 50%;
   text-align: center;
   line-height: 22px;
-  cursor: url("/assets/images/colombe-red.svg"), pointer;
+  cursor: url("../assets/images/colombe-red.svg"), pointer;
 }
 .sidenav .close:hover {
   color: var(--red);
@@ -541,7 +573,7 @@ a.active {
   transform: scale(1.9);
   -webkit-transform: scale(1.9);
   -ms-transform: scale(1.9);
-  background-image: url(/assets/images/colombe-black.svg);
+  background-image: url(../assets/images/colombe-black.svg);
 }
 .bird2 {
   top: 100px;
@@ -550,7 +582,7 @@ a.active {
   transform: scale(2);
   -webkit-transform: scale(2);
   -ms-transform: scale(2);
-  background-image: url(/assets/images/colombe-black.svg);
+  background-image: url(../assets/images/colombe-black.svg);
   margin-left: 20dvw;
 }
 .bird3 {
@@ -560,7 +592,7 @@ a.active {
   transform: scale(2.4);
   -webkit-transform: scale(2.4);
   -ms-transform: scale(2.4);
-  background-image: url(/assets/images/colombe-black.svg);
+  background-image: url(../assets/images/colombe-black.svg);
   margin-left: 40dvw;
 }
 
@@ -571,7 +603,7 @@ a.active {
   transform: scale(1.9);
   -webkit-transform: scale(1.9);
   -ms-transform: scale(1.9);
-  background-image: url(/assets/images/colombe-black.svg);
+  background-image: url(../assets/images/colombe-black.svg);
   margin-left: -20dvw;
 }
 .bird5 {
@@ -581,7 +613,7 @@ a.active {
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
-  background-image: url(/assets/images/colombe-black.svg);
+  background-image: url(../assets/images/colombe-black.svg);
 }
 .bird6 {
   top: 200px;
@@ -590,7 +622,7 @@ a.active {
   transform: scale(2.4);
   -webkit-transform: scale(2.4);
   -ms-transform: scale(2.4);
-  background-image: url(/assets/images/colombe-red.svg);
+  background-image: url(../assets/images/colombe-red.svg);
   margin-left: 12dvw;
 }
 .bird7 {
@@ -600,7 +632,7 @@ a.active {
   transform: scale(2.2);
   -webkit-transform: scale(2.2);
   -ms-transform: scale(2.2);
-  background-image: url(/assets/images/colombe-red.svg);
+  background-image: url(../assets/images/colombe-red.svg);
   margin-left: 24dvw;
 }
 
@@ -609,7 +641,7 @@ a.active {
   animation-delay: -18s !important;
   -webkit-animation-delay: -18s !important;
   transform: scale(0.8);
-  background-image: url(/assets/images/colombe-red.svg);
+  background-image: url(../assets/images/colombe-red.svg);
   margin-left: 36dvw;
 }
 .bird9 {
@@ -619,7 +651,7 @@ a.active {
   transform: scale(1.6);
   -webkit-transform: scale(1.6);
   -ms-transform: scale(1.6);
-  background-image: url(/assets/images/colombe-red.svg);
+  background-image: url(../assets/images/colombe-red.svg);
   margin-left: -10dvw;
 }
 .bird10 {
@@ -629,7 +661,7 @@ a.active {
   transform: scale(2.6);
   -webkit-transform: scale(2.6);
   -ms-transform: scale(2.6);
-  background-image: url(/assets/images/colombe-green.svg);
+  background-image: url(../assets/images/colombe-green.svg);
 }
 .bird11 {
   top: 225px;
@@ -638,7 +670,7 @@ a.active {
   transform: scale(1.7);
   -webkit-transform: scale(1.7);
   -ms-transform: scale(1.7);
-  background-image: url(/assets/images/colombe-green.svg);
+  background-image: url(../assets/images/colombe-green.svg);
   margin-left: 5dvw;
 }
 .bird12 {
@@ -648,7 +680,7 @@ a.active {
   transform: scale(2.4);
   -webkit-transform: scale(2.4);
   -ms-transform: scale(2.4);
-  background-image: url(/assets/images/colombe-green.svg);
+  background-image: url(../assets/images/colombe-green.svg);
   margin-left: 11dvw;
 }
 .bird13 {
@@ -658,7 +690,7 @@ a.active {
   transform: scale(2.1);
   -webkit-transform: scale(2.1);
   -ms-transform: scale(2.1);
-  background-image: url(/assets/images/colombe-green.svg);
+  background-image: url(../assets/images/colombe-green.svg);
   margin-left: 21dvw;
 }
 
@@ -669,7 +701,7 @@ a.active {
   transform: scale(0.8);
   -webkit-transform: scale(0.8);
   -ms-transform: scale(0.8);
-  background-image: url(/assets/images/colombe-green.svg);
+  background-image: url(../assets/images/colombe-green.svg);
   margin-left: 38dvw;
 }
 .bird15 {
@@ -679,7 +711,7 @@ a.active {
   transform: scale(2.3);
   -webkit-transform: scale(2.3);
   -ms-transform: scale(2.3);
-  background-image: url(/assets/images/colombe-white.svg);
+  background-image: url(../assets/images/colombe-white.svg);
 }
 .bird16 {
   top: 375px;
@@ -688,7 +720,7 @@ a.active {
   transform: scale(1.5);
   -webkit-transform: scale(1.5);
   -ms-transform: scale(1.5);
-  background-image: url(/assets/images/colombe-white.svg);
+  background-image: url(../assets/images/colombe-white.svg);
   margin-left: -30dvw;
 }
 .bird17 {
@@ -698,7 +730,7 @@ a.active {
   transform: scale(1.3);
   -webkit-transform: scale(1.3);
   -ms-transform: scale(1.3);
-  background-image: url(/assets/images/colombe-white.svg);
+  background-image: url(../assets/images/colombe-white.svg);
   margin-left: -2dvw;
 }
 
@@ -709,7 +741,7 @@ a.active {
   transform: scale(0.9);
   -webkit-transform: scale(0.9);
   -ms-transform: scale(0.9);
-  background-image: url(/assets/images/colombe-white.svg);
+  background-image: url(../assets/images/colombe-white.svg);
   margin-left: 30dvw;
 }
 .bird19 {
@@ -719,7 +751,7 @@ a.active {
   transform: scale(1.6);
   -webkit-transform: scale(1.6);
   -ms-transform: scale(1.6);
-  background-image: url(/assets/images/colombe-white.svg);
+  background-image: url(../assets/images/colombe-white.svg);
   margin-left: 42dvw;
 }
 .bird20 {
@@ -729,7 +761,7 @@ a.active {
   transform: scale(2);
   -webkit-transform: scale(2);
   -ms-transform: scale(2);
-  background-image: url(/assets/images/colombe-red.svg);
+  background-image: url(../assets/images/colombe-red.svg);
 }
 .bird {
   animation: move 18s infinite alternate;
@@ -1120,7 +1152,7 @@ a.active {
   color: var(--red);
   background-color: black;
   line-height: 1.5rem;
-  cursor: url("/assets/images/colombe-red.svg"), pointer;
+  cursor: url("../assets/images/colombe-red.svg"), pointer;
 }
 
 @media screen and (max-width: 610px) {
@@ -1134,7 +1166,7 @@ a.active {
 
 footer {
   width: 100dvw;
-  height: 30px;
+  height: 40px;
   background-color: black;
   color: white;
   position: fixed;
@@ -1144,8 +1176,16 @@ footer {
   align-items: center;
   justify-content: right;
 }
-.lazez {
+.lazez,
+.lazez2 {
   font-size: 0.8rem;
+}
+a.lazez2 {
+  color: initial;
+  text-decoration: underline;
+  padding: 0.1rem 0.5rem;
+  background-color: whitesmoke;
+  border-radius: 5px;
 }
 a.lazez {
   color: initial;
@@ -1184,14 +1224,22 @@ a.lazez {
   z-index: 999;
 }
 .articles article {
-  min-width: 70dvw;
+  /* min-width: 70dvw; */
+  min-width: min(700px, 90dvw);
   background-color: var(--grey);
   position: absolute;
   left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
+  top: 0;
+  transform: translateX(-50%);
+  margin-top: 10dvh;
   padding: 2rem;
-  margin-top: 5rem;
+  font-size: 1.8rem;
+}
+.articles article p::first-letter {
+  font-size: 2.2rem;
+}
+.articles article h3 {
+  font-size: 2.2rem;
 }
 .close-article {
   width: 30px;
@@ -1217,7 +1265,93 @@ a.lazez {
   cursor: zoom-in;
 }
 
+/* FORMULAIRE DE CONTACT */
+.link-contact-form {
+  padding: 5rem 0;
+}
+.link-contact-form a {
+  padding: 2rem;
+  cursor: not-allowed;
+}
+.form-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90dvw;
+  max-width: 1200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+#contactForm {
+  padding: 1rem 5rem 4rem 5rem;
+  background-color: var(--green);
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  position: relative;
+  color: white;
+}
+#contactForm fieldset {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+#contactForm label {
+  display: flex;
+  flex-direction: column;
+}
+#contactForm input {
+  margin-bottom: 1rem;
+}
+#contactForm .ok {
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  padding: 0 1rem;
+  border: none;
+}
+#contactForm .ok div {
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  padding-top: 0.2rem;
+}
+#contactForm .ok input {
+  margin-top: 0.3rem;
+  width: 50px;
+}
+#contactForm .ok label {
+  font-weight: normal;
+  font-size: 0.8rem;
+}
+.send {
+  margin-top: 1rem;
+  cursor: pointer;
+}
+.send:disabled {
+  cursor: not-allowed;
+}
+
+.error-msg {
+  z-index: 1;
+  background-color: red;
+  padding: 1rem;
+  color: white;
+  display: flex;
+  justify-content: center;
+  width: 98dvw;
+  border-radius: 5px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 /* RESPONSIVE */
+
 @media screen and (max-width: 800px) {
   .rss {
     position: absolute;
@@ -1284,15 +1418,49 @@ a.lazez {
     color: var(--red);
     background-color: black;
     line-height: 1.5rem;
-    cursor: url("/assets/images/colombe-red.svg"), pointer;
+    cursor: url("../assets/images/colombe-red.svg"), pointer;
   }
   .articles article {
-    min-width: 90dvw;
-    max-width: 92dvw;
-    top: 20px;
+    padding: 1rem;
+  }
+  .articles article p::first-letter {
+    font-size: 1.6rem;
+  }
+  .articles article p {
+    font-size: 1.3rem;
+  }
+  .articles article h3 {
+    font-size: 1.6rem;
+  }
+  .pdf {
+    max-width: 95%;
+  }
+}
+
+@media (max-width: 740px) {
+  section.contactF {
+    min-height: 125dvh;
+  }
+  #contactForm {
+    flex-direction: column;
+    padding: 1rem 1rem 10.5rem 1rem;
+  }
+
+  #contactForm .ok {
+    bottom: 2.5rem;
+  }
+  .send {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
     transform: translateX(-50%);
-    margin-bottom: 8rem;
-    padding-top: 2.5rem;
+  }
+  .form-container {
+    flex-direction: column;
+    padding: 0;
+    top: 70dvh;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 @media screen and (max-width: 600px) {

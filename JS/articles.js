@@ -29,13 +29,30 @@ function stopLoaderArt() {
 console.log(id);
 
 const closeArticle = document.querySelector(".close-article");
+const articlesLinks = document.querySelectorAll("#root a");
+const idback = document.querySelector("#root .idback");
+let idb = "";
 if (closeArticle) {
-  closeArticle.addEventListener("click", closeThisArticle);
-}
-function closeThisArticle() {
-  if (window.history.length > 1) {
-    window.history.back();
-  } else {
-    window.location.href = "/";
+  if (idback) {
+    idb = idback.id;
+    console.log("idback", idb);
+  } else if (!idback) {
+    idb = id;
+    console.log("idback", idb);
   }
+
+  closeArticle.addEventListener("click", closeThisArticle);
+  articlesLinks.forEach((link) =>
+    link.addEventListener("click", closeThisArticle)
+  );
+}
+// function closeThisArticle() {
+//   if (window.history.length > 1) {
+//     articles.style.display = "none";
+//   } else {
+//     window.location.href = "/";
+//   }
+// }
+function closeThisArticle() {
+  window.location.href = "/#" + idb;
 }
