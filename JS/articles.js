@@ -46,13 +46,13 @@ if (closeArticle) {
     link.addEventListener("click", closeThisArticle)
   );
 }
-// function closeThisArticle() {
-//   if (window.history.length > 1) {
-//     articles.style.display = "none";
-//   } else {
-//     window.location.href = "/";
-//   }
-// }
 function closeThisArticle() {
-  window.location.href = "/#" + idb;
+  if (window.history.length > 1) {
+    window.location.href = "/#" + id;
+  } else {
+    window.location.href = "/";
+  }
 }
+// function closeThisArticle() {
+//   window.location.href = "/";
+// }

@@ -18,14 +18,16 @@ article.slides {
 
 .slides button,
 .slides input,
-.actu input {
+.actu input,
+.ibrahim input {
   outline: none;
   border: none;
   opacity: 0;
 }
 
 .slides input[type="radio"],
-.actu input[type="radio"] {
+.actu input[type="radio"],
+.ibrahim input[type="radio"] {
   position: absolute;
   top: -5000px;
   left: -5000px;
@@ -33,7 +35,8 @@ article.slides {
   z-index: -1000;
 }
 
-.slider {
+.slider,
+.slider2 {
   width: 370px;
   height: 370px;
   position: relative;
@@ -51,6 +54,17 @@ article.slides {
   transition: opacity 2500ms;
   border-radius: 10px;
 }
+.slider2 {
+  overflow: hidden;
+}
+.slider2 .slide img {
+  width: 340px;
+  height: auto;
+  opacity: 0;
+  transition: opacity 2500ms;
+  border-radius: 10px;
+  object-fit: contain;
+}
 #page1:checked ~ .slide1 img,
 #page2:checked ~ .slide2 img,
 #page3:checked ~ .slide3 img,
@@ -61,19 +75,11 @@ article.slides {
 #page8:checked ~ .slide8 img {
   opacity: 1;
 }
-
-.link1,
-.link2,
-.link3,
-.link4,
-.link5 {
-  display: none;
-}
-
-#actu1:checked ~ .link1,
-#actu2:checked ~ .link2,
-#actu3:checked ~ .link3,
-#actu4:checked ~ .link4,
-#actu5:checked ~ .link5 {
-  display: block;
+#ibrahim1:checked ~ .ibrahim1 img,
+#ibrahim2:checked ~ .ibrahim2 img,
+#ibrahim3:checked ~ .ibrahim3 img,
+#ibrahim4:checked ~ .ibrahim4 img,
+#ibrahim5:checked ~ .ibrahim5 img,
+#ibrahim6:checked ~ .ibrahim6 img {
+  opacity: 1;
 }

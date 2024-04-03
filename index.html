@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site web de la branche de l'A.F.P.S de Dinan">
+    <meta name="description" content="Site web de la branche de l'AFPS de Dinan">
     <meta name="author" content="LazezBZH" />
 
 
-    <meta property="og:title" content="AFPS Dinan" >
-	<meta property="og:url" content="https://afps-dinan.netlify.app/" >
-	<meta property="og:image" content="https://afps-dinan.netlify.app/assets/images/network.webp" >
+    <meta property="og:title" content="AFPS Dinan, Association France Palestine Solildarité" >
+	<meta property="og:url" content="http://afps-dinan.ovh/" >
+	<meta property="og:image" content="http://afps-dinan.ovh/assets/images/network.webp" >
 	<meta property="og:description" content="Site web de la branche de l'A.F.P.S de Dinan" >
 	<meta property="og:site_name" content="AFPS Dinan" >
 	<meta property="og:type" content="website" >
@@ -27,7 +27,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="/public/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
-	<link rel="shortcut icon" href="/public/favicon.ico" >
+	<link rel="shortcut icon" href="/public/favicon-96x96.png" >
 	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -54,11 +54,7 @@
 
     <link rel="preload" fetchpriority="high" as="image" href="/assets/images/Logo-AFPS.webp" type="image/webp">
 
-    <!-- RSS -->
-    <!-- <link rel="alternate" type="application/rss+xml" title="AFPS Dinan" href="rss.xml">
-            <a class="rss" href="https://afps-dinan.netlify.app/rss.xml"> <img src="rss.png" alt="rss" class="rss-img"> 
-            </a>
-            <span class="rss-txt">RSS</span> -->
+  
 
 </head>
 <body class="loading">
@@ -91,13 +87,13 @@
         <header id="accueil">
 
             <!-- RSS -->
-            <a class="rss" href="https://afps-dinan.netlify.app/rss.xml"> <img src="./rss.png" alt="rss" class="rss-img"></a>
+            <a class="rss" href="http://afps-dinan.ovh/rss.xml"> <img src="./rss.png" alt="rss" class="rss-img"></a>
             <span class="rss-txt">RSS</span>
             <!-- RSS fin -->
-
+<!-- 
             <div class="lang-btn">
               <button type="button" class="lang-switcher i18n" data-i18n="switch">En</button>
-            </div>
+            </div> -->
             <div class="header-top">
                 <img loading="lazy" src="./assets/images/Logo-AFPS.webp" alt="logo de l'AFPS" class="logo">
                 <div  class="title-container">
@@ -112,7 +108,7 @@
             <div id="closeBtn"  class="close">X</div>
             <ul >
                 <li>
-                    <a id="link-12" class="links active i18n" data-i18n="homeLink" href="/#accueil">Accueil</a>
+                    <a id="link-12" class="links active i18n" data-i18n="homeLink" href="/">Accueil</a>
                 </li>
                 <li>
                     <a id="link-22" class="links i18n" data-i18n="actionsLink" href="/#agenda">Nos actions</a>
@@ -137,7 +133,7 @@
         </div>
         <nav class="desk-nav">
             <ul class="nav">
-                <li><a id="link-1" class="links active i18n" data-i18n="homeLink" href="/#accueil">Accueil</a></li>
+                <li><a id="link-1" class="links active i18n" data-i18n="homeLink" href="/">Accueil</a></li>
                 <li>
                     <a id="link-2" class="links i18n" data-i18n="actionsLink" href="/#agenda">Nos actions</a>
                     <ul>
@@ -153,67 +149,53 @@
             </ul>
         </nav>
 
+
+<!-- SECTION 1 PRÉSENTATIONS -->
         <section class="accueil heading-1" >
+            <!-- bandeau résumé actu -->
             <div class="actu">
-                <input aria-label="actus" name="control2" id="actu1" type="radio" checked />
-                <input aria-label="actus" name="control2" id="actu2" type="radio" />
-                <input aria-label="actus" name="control2" id="actu3" type="radio" />
-                <input aria-label="actus" name="control2" id="actu4" type="radio" />
-                <input aria-label="actus" name="control2" id="actu5" type="radio" />
                 <p>En bref:</p>
-                <span  class="link1">
-                    <a href="#soon">Réunion publique vendredi 19 avril 2024</a>
-                </span>
-                <span  class="link2">
-                    <a href="#agenda">Rassemblement hebdomadaire place Duclos à Dinan (à l'angle de la rue Thiers)</a>
-                </span>
-                <span  class="link3">
-                    <a href="#agenda">Réunion mensuelle salle maison des associations la Source</a>
-                </span>
-                <span  class="link4">
-                    <a href="#films">Coup de projecteur sur la Palestine au Cinéma de Dinan</a>
-                </span>
-                <span  class="link5">
-                    <a href="#bds">Sensibillisation au Boycott Désinvestissement Sanction</a>
-                </span>
-                 
-                 
+                <div id="brief-links" ></div>              
+                 <!-- généré par slider.js -->
                  
                  
             </div>
             <div class=" title">
                 <h2 class="i18n" data-i18n="aboutUs" >Qui sommes nous?</h2>
             </div> 
+            <!-- articles présentation -->
             <div class="accueil-container">
                 <article id="article1">
                     <button class="plus-btn" value="1">&#x2795;</button>
                     <h3>Notre association</h3>
-                    <p>Créée en <strong>2008</strong> (ou 2009???????), époque de l'opération 
+                    <p>Créée début <strong>2009</strong>, époque de l'opération 
                         <a class="normal-link" target="_blank" href="https://fr.wikipedia.org/wiki/Guerre_de_Gaza_de_2008-2009"> <strong>Plomb durci</strong></a>  
-                        l'association compte actuellement 239758 (à corriger bien sûr?????) membres ainsi que de nombreux sympathisants.
+                        l'AFPS-Dinan compte actuellement une vingtaine d'adhérents ainsi que de nombreux sympathisants.
                     </p>
                     <p>Elle organise des rencontres et évènements réguliers sur Dinan et les communes avoisinantes.</p>
-                    <p>Comme l’AFPS nationale à laquelle elle est affiliée (?????ou autre terme), l'AFPS Dinan 
-                        propose des activités d'informations, d'action politique et intervention citoyenne, 
-                        de soutien matérielle en faveur des populations palestiniennes, de coopération et aide au développement.
+                    <p>Comme l'AFPS nationale (née en 2001 de la fusion de l'Association Médicale Franco Palestinienne et de l'Association France Palestine) à laquelle elle est affiliée, l'AFPS Dinan 
+                        propose des activités d'information, d'action politique et intervention citoyenne, 
+                        de soutien matériel et humanitaire en faveur des populations palestiniennes, de coopération et aide au développement,
+                        ainsi que des échanges culturels.
                     </p>
+                    <a target="_blank" href="https://www.france-palestine.org/Charte-et-statuts-de-l-association">Charte de l'AFPS</a>
                 </article>
       
                 <!-- SLIDER début -->
                     <article class="slides">
 
                         <div class="slider">
-                            <input aria-label="diaporama" name="control" id="page1" type="radio" checked />
-                            <input aria-label="diaporama" name="control" id="page2" type="radio" />
-                            <input aria-label="diaporama" name="control" id="page3" type="radio" />
-                            <input aria-label="diaporama" name="control" id="page4" type="radio" />
-                            <input aria-label="diaporama" name="control" id="page5" type="radio" />
-                            <input aria-label="diaporama" name="control" id="page6" type="radio" />
-                            <input aria-label="diaporama" name="control" id="page7" type="radio" />
-                            <input aria-label="diaporama" name="control" id="page8" type="radio" />
+                            <input aria-label="diaporama" name="control3" id="page1" type="radio" checked />
+                            <input aria-label="diaporama" name="control3" id="page2" type="radio" />
+                            <input aria-label="diaporama" name="control3" id="page3" type="radio" />
+                            <input aria-label="diaporama" name="control3" id="page4" type="radio" />
+                            <input aria-label="diaporama" name="control3" id="page5" type="radio" />
+                            <input aria-label="diaporama" name="control3" id="page6" type="radio" />
+                            <input aria-label="diaporama" name="control3" id="page7" type="radio" />
+                            <input aria-label="diaporama" name="control3" id="page8" type="radio" />
                             <!--first slide-->
                             <div class="slide slide1">
-                                <img src="./assets/images/slide2.webp" alt="">
+                                <img src="./assets/images/slide1.webp" alt="">
                             </div>
                             <!--second slide-->
                             <div class="slide slide2">
@@ -259,6 +241,8 @@
                             <li><a href="#bds">Sensibillisation au Boycott Désinvestissement Sanction</a></li>
                             <li>...à venir: vente d'artisanat marocain</li>
                             <li>...à venir: venue d'intervenants</li>
+                            <li class="green">Et bien d'autres à lire ci-dessous.</li>
+                            <li>Abonnez-vous au flux RSS pour ne rater aucune publication.</li>
                         </ul>
                     </article>
 
@@ -267,45 +251,166 @@
             </div>
         
         </section>
+<!-- SECTION 1 PRÉSENTATIONS -->
+
+
+<!-- SECTION 2 ACTIONS -->
         <section class="agenda heading-2">
             <span class="idback" id="agenda"></span>
             <div class="title">
                 <h2>Nos actions / Nos rencontres</h2>
             </div> 
             <div class="agenda-container">
-                <iframe loading="lazy" title="agenda de l'A.F.P.S Dinan" class="agenda-frame" src="https://calendar.google.com/calendar/embed?height=600&wkst=2&bgcolor=%23259d50&ctz=Europe%2FParis&src=N2UyYTc0MWY5YzExMjE3OGY1YmYxNzA5YTIxMjFjNWUzOGUyZWRmMTkzMTRkMjkxZjkzYTZiZDc3OTMwYTUwZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%234285F4" style="border:solid 1px #777" width="600" height="400" frameborder="0" scrolling="no"></iframe>
+                <aside>
+                <iframe src="https://calendar.google.com/calendar/embed?height=550&wkst=1&ctz=Europe%2FParis&bgcolor=%230B8043&mode=AGENDA&title=AFPS%20DINAN%20Notre%20Agenda&src=N2UyYTc0MWY5YzExMjE3OGY1YmYxNzA5YTIxMjFjNWUzOGUyZWRmMTkzMTRkMjkxZjkzYTZiZDc3OTMwYTUwZkBncm91cC5jYWxlbmRhci5nb29nbGUuY29t&color=%23616161" style="border-width:6px; border-color: black; border-radius: 10px;" frameborder="0" scrolling="no"></iframe>
+                <div>
                 <p class="black-bg">Tout·e sympathisant·e est le/la bienvenu·e lors des rassemblements place Duclos chaque vendredi soir 18h.</p>
                 <p class="black-bg">Les réunions mensuelles (deuxième mercredi de chaque mois à 19h15) à la salle de la Source sont ouverts à tous/toutes que vous soyez membre, sympathisant·e ou simplement en quête d'informations.</p>
                 <p class="black-bg">Cliquez sur un événement pour l'ajouter à votre agenda</p>
-                <!-- <a id="agenda-frame" href="https://calendar.google.com/calendar/ical/7e2a741f9c112178f5bf1709a2121c5e38e2edf19314d291f93a6bd77930a50f%40group.calendar.google.com/public/basic.ics">Télécharger l'agenda</a> -->
+                </div>
+                </aside>
+                
                 <div class="actions">
-                    <article id="article3">
-                        <button class="plus-btn" value="3">&#x2795;</button>
-                        <span class="idback" id="soon"></span>
-                        <h3> Réunion publique</h3>
-                        <p>Une réunion publique avec Dominique Le Duff et Joëlle Couillandre, tous deux membres de l'AFPS de Rennes
-                            se tiendra le vendredi 19 avril au soir (date, heure et lieu à préciser/confirmer).
-                        </p>
-                        <p>Dans le cadre de la campagne de cueillette des olives qu'iels organisent chaque année depuis 2001, 
-                            Joëlle et Dominique étaient présents le 7 octobre en Cisjordanie et y sont restés jusqu'au 11 novembre.</p>
-                        <p class="more-pad">Joëlle a tenu un journal de ces jours qu'il est possible de consulter <br>
-                            <a target="_blank" href="https://ceriseslacooperative.info/?s=journal+de+jo">sur ce lien</a>. 
-                        </p>
-                    </article>                   
-                    <article id="article7">
-                        <button class="plus-btn" value="7">&#x2795;</button>
+                    <div>
+                        <article id="article3">
+                            <button class="plus-btn" value="3">&#x2795;</button>
+                            <span class="idback" id="soon"></span>
+                            <h3> Réunion publique</h3>
+                            <div>
+                                <img loading="lazy" class="float-right float-right_grow" src="/assets/images/reunion-publique.webp" alt="flyer réunion publique">
+                                <p>Une réunion publique avec Dominique Le Duff et Joëlle Couillandre, tous deux membres de l'AFPS de Rennes
+                                se tiendra le vendredi 19 avril à 20h, maison des association La Source, bd Aubert à Dinan.
+                            </p>
+                            <p>Dans le cadre de la campagne de cueillette des olives qu'iels organisent chaque année depuis 2001, 
+                                Joëlle et Dominique étaient présent·es le 7 octobre en Cisjordanie et y sont resté·es jusqu'au 11 novembre.</p>
+                            <p class="more-pad">Joëlle a tenu un journal de ces jours qu'il est possible de<br> consulter 
+                                <a target="_blank" href="https://ceriseslacooperative.info/?s=journal+de+jo">sur ce lien</a>. 
+                            </div>
+                            </p>
+                            <a  target="_blank"  target="_blank" href="assets/documents/RÉUNION PUBLIQUE.pdf">Télécharger le flyer</a>
+                        </article> 
+                    <article id="article4">
+                        <button class="plus-btn" value="4">&#x2795;</button>
                         <h3>Rassemblement hebdomadaire</h3>
-                        <p>Depuis le date ????? se tient tous les vendredis soirs, place Duclos 
-                            à Dinan un rassemblement de soutien au peuple palestinien.</p>
-                        <p>Nous y demandons le cessez-le-feu dans le territoire de Gaza.
-                        </p>
-                        <p>C'est également un moment de recueillement et d'échange avec la population dinannaise 
-                            afin de les sensibiliser à la situation locale. </p>
+                        <div>
+                            <img loading="lazy" class="float-right float-right_grow" src="./assets/images/rasssemblementduclos.webp" alt="élus">
+                            <p>Depuis le 13 octobre 2023, se tient tous les vendredis soirs, place Duclos 
+                            à Dinan, une veillée de soutien au peuple palestinien.</p>
+                            <p>Nous y demandons le cessez-le-feu dans le territoire de Gaza et sur tout le territoire palestinien.</p>
+                            <p>C'est un moment de recueillement et d'échange avec la population dinannaise, 
+                            afin de l'es 'informer et de la sensibiliser à la situation locale. </p>
+                            
+                        </div>
                         <a   target="_blank" href="https://www.letelegramme.fr/cotes-d-armor/dinan-22100/veille-pour-gaza-chaque-vendredi-a-dinan-place-duclos-6502476.php">Article dans le Télégramme</a>        
+                    </article>                       
+                    </div>
+                    
+                    <article id="article12">
+                        <span id="cagnotte"></span>
+                        <button class="plus-btn" value="12">&#x2795;</button>
+                        <h3>Sauver de la mort notre famille à Gaza</h3>
+                        <div>
+                            <img loading="lazy" class="float-right float-right_grow" src="./assets/images/familleawad2.webp" alt="famille awad">
+                            <h4>Nous relayons ici l'appel de notre ami Ibrahim.</h4>
+                            <p>ci-dessous sa demande et le lien pour la cagnotte</p>                           
+                            <p>"Palestinien de Gaza, je vis dans la région de Rennes avec ma femme, également Palestinienne de Gaza,
+                                 et nos trois enfants.</p>
+                            <p> <strong>Je fais appel à vous pour m'aider à sortir de l'enfer ma famille qui est à Gaza sous les bombes depuis plus de 165 jours 
+                                et 165 nuits, et qui est privée de tout en raison du siège total du territoire et du manque d'aide humanitaire.</strong></p>
+                            <p>Jusque début janvier, mon père, ma mère, ma jeune sœur Nada (18 ans) et trois de mes frères, Bilal (17 ans), 
+                                Mohammed (24 ans) et Dirar (32 ans) vivaient tous dans notre maison familiale à Khan-Younis, ainsi qu'un autre 
+                                de mes frères, Haitham, sa femme Wissam, et leurs trois enfants. Ils ont tous dû la quitter après qu'elle ait été 
+                                criblée de balles et en partie détruite par les tirs d'un char qui était à proximité.</p>
+                            <p>Ils survivent depuis sous une tente à Rafah, souffrant du manque d'eau, de nourriture, de médicaments, 
+                                d'électricité, de gaz, d'hygiène, de tout ! Dans ces conditions inhumaines, toute la famille est atteinte de maux 
+                                de ventre aigus et de diarrhées. Mon frère Haitham a été blessé par une balle qui lui a traversé l'abdomen. 
+                                Il a pu être soigné mais reste très affaibli. Je suis dans l'angoisse permanente de voir un autre membre de ma famille être blessé, 
+                                ou pire, être tué par un bombardement (comme cela a été le cas pour un des jeunes frères de ma femme), 
+                                par un tir, ou par la famine. <strong>Aucune perspective d'apaisement se dessine.</strong></p>
+                            <p><strong>Mes parents, ma sœur, mes frères ma belle-sœur et mes neveux doivent d'urgence se mettre en sécurité en quittant 
+                                la Bande de Gaza pour aller en Egypte.</strong> Mais le montant demandé par les autorités égyptiennes pour traverser 
+                                le poste frontière de Rafah est très élevé (5 000$ minimum par adulte) et une fois en Egypte ma famille devra faire face 
+                                à des dépenses pour se loger, se nourrir, se soigner. Aussi, la somme totale à réunir est très élevée.</p>
+                            <p>Ma famille a tout perdu et n'a aucune ressource. N'ayant pas de mon côté l'argent nécessaire, je n'ai pas 
+                                d'autre choix que de lancer cette collecte.</p>
+                            <p>Je vous remercie infiniment pour la contribution que vous y apporterez et pour diffuser cet appel autour de vous.</p>
+                            <p>Avec l'espoir que ma famille puisse sortir rapidement de l'enfer."</p>
+                            <p><strong >Ibrahim Awad</strong></p>     
+                        </div>
+                       <a   target="_blank" href="https://www.gofundme.com/f/sauver-de-la-mort-ma-famille-a-gaza">Cagnotte gofundme</a>
+                       <a  target="_blank"  href="assets/documents/cagnotte famille Awad.pdf">Télécharger le flyer pour relayer la demande</a>    
+                        
                     </article>
-                    <article id="article8">
-                        <button class="plus-btn" value="8">&#x2795;</button>
+
+
+                    <article id="article11">
+                        <span id="audience"></span>
+                        <button class="plus-btn" value="11">&#x2795;</button>
+                        <h3>Audience de la famille Awad au tribunal adminstratif de Rennes</h3>
+                        <h4>Tribunal Administratif de Rennes jeudi 4 avril à 10 h 30. </h4>
+                        <div>
+                            <img loading="lazy" class="float-right float-right_grow" src="./assets/images/familleawad1.webp" alt="famille awad">
+                            <p class="no-maj"><i>mise à jour</i></p>
+                            <p>Face à l'emballement médiatique qu'avait suscité l'indignation légitime de la décision d'éloignement 
+                                vers la Palestine de la famille AWAD, la préfecture d'Ille et Vilaine s'était empressée d'adresser un 
+                                communiqué à la presse en précisant que la procédure était suspendue à la décision à l'OFPRA.</p>
+                            <p>Quelques jours plus tard, c'est l'OFPRA qui a directement pris contact avec la famille AWAD 
+                                pour proposer de les interroger dans les plus brefs délais. Une procédure exceptionnelle qui interroge 
+                                sur l'indépendance de l'OFPRA qui ne communique jamais habituellement avec les requérants avant la convocation…</p>
+                            <p>L'entretien s'est déroulé le 19 février. Les époux AWAD ont été interrogés successivement pendant plusieurs heures.  
+                                Alors que la célérité des convocations laissait espérer une réponse rapide, l'OFPRA n'a à ce jour pas rendu 
+                                sa décision sur le sort de la famille AWAD.</p>
+                            <p>A la demande de la préfecture d'Ille et Vilaine, le Tribunal administratif de Rennes avait reporté 
+                                l'audience initialement prévue le 23 janvier qui devait statuer sur l'OQTF vers la Palestine. 
+                                Une nouvelle date vient d'être fixée : Le jeudi 4 avril à 10h30.</p>
+                            <p>Nous apprenons que cette audience a été à nouveau reportée et devrait avoir lieu le : <strong>Le jeudi 2 mai heure à préciser</strong>.</p>
+                            <p>La famille AWAD appelle à un large soutien à cette audience pour demander l'annulation de 
+                                leur OQTF et leur régularisation.</p>      
+                        </div>
+                    </article>                
+
+
+                    <article id="article5">
+                        <button class="plus-btn" value="5">&#x2795;</button>
+                 
                         <h3>Repas de solidarité avec Gaza</h3>
+        
+
+                            <div class="ibrahim">
+                                <div class=" slider2">
+                                    <input aria-label="diaporama" name="control" id="ibrahim1" type="radio" checked />
+                                    <input aria-label="diaporama" name="control" id="ibrahim2" type="radio" />
+                                    <input aria-label="diaporama" name="control" id="ibrahim3" type="radio" />
+                                    <input aria-label="diaporama" name="control" id="ibrahim4" type="radio" />
+                                    <input aria-label="diaporama" name="control" id="ibrahim5" type="radio" />
+                                    <input aria-label="diaporama" name="control" id="ibrahim6" type="radio" />
+                                    <!--first slide-->
+                                    <div class="slide ibrahim1">
+                                        <img src="./assets/images/ibrahim1.webp" alt="">
+                                    </div>
+                                    <!--second slide-->
+                                    <div class="slide ibrahim2">
+                                        <img src="./assets/images/ibrahim2.webp" alt="">
+                                    </div>
+                                    <!--third slide-->
+                                    <div class="slide ibrahim3">
+                                        <img src="./assets/images/ibrahim3.webp" alt="">
+                                    </div>          
+                                    <!--fourth slide-->
+                                    <div class="slide ibrahim4">
+                                        <img src="./assets/images/ibrahim4.webp" alt="">
+                                    </div>
+                                    <!--5 slide-->
+                                    <div class="slide ibrahim5">
+                                        <img src="./assets/images/ibrahim5.webp" alt="">
+                                    </div>
+                                    <!--6 slide-->
+                                    <div class="slide ibrahim6">
+                                        <img src="./assets/images/ibrahim6.webp" alt="">
+                                    </div>
+                                </div>                               
+                            </div>
+                    
                         <p>Le 28 février 2024, s'est tenu à la salle des fêtes de Lanvallay un repas de solidarité avec Gaza.</p>
                         <p>Lors de cette soirée, 160 personnes étaient réunies pour ce repas palestinien précédé d'une intervention d'Ibrahim Awad</p>
                         <a target="_blank" href="https://www.france-palestine.org/Ibrahim-et-Shaden-Awad-et-leurs-3-enfants-doivent-rester-en-France">
@@ -313,102 +418,162 @@
                         <a  target="_blank" href="https://www.ouest-france.fr/bretagne/dinan-22100/le-comite-france-palestine-de-dinan-demande-aux-elus-locaux-dappeler-a-un-cessez-le-feu-dbb629aa-d56a-11ee-9c76-f2c2ccb23225">
                             Article de Ouest-France</a>        
                     </article>
-                    <article id="article10">
-                        <button class="plus-btn" value="10">&#x2795;</button>
+                    <article id="article6">  <!--NON RSS-->
+                        <button class="plus-btn" value="6">&#x2795;</button>
                         <h3>Contact avec les élus</h3>
                         <div>
-                        <img loading="lazy" class="float-right" src="./assets/images/elus.jpg" alt="élus">
-                        <p>Texte à venir.</p></div>      
+                        <img loading="lazy" class="float-right float-right_grow" src="./assets/images/elus.webp" alt="élus">
+                        <p>Texte à venir.</p>
+                        <p>Abonnez-vous au flux RSS pour ne rater aucune publication.</p>
+                    </div>      
                     </article>
-                    <article id="article9">
-                        <button class="plus-btn" value="9">&#x2795;</button>
+                    <article id="article7"><!--NON RSS-->
+                        <button class="plus-btn" value="7">&#x2795;</button>
                         <h3>Un drapeau sur les sommets</h3>
-                        <p>Samedi 16 mars à 15h des membres de l'AFPS se sont retrouvés au jardin anglais afin d'orner les remparts d'un drapeau palestinien.</p>
-                        <p>Texte ?????</p>
-                        <p>PHOTOS????? </p>        
+                        <iframe width="270" height="155" src="https://www.youtube.com/embed/ti5YeeuQYYI?si=d8m3OE4Cptsd3noG" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <p>Répondant à l'initiative d'un savoyard "100 sommets pour Gaza", Samedi 16 mars à 15h des membres de l'AFPS-Dinan se sont retrouvés au jardin anglais afin de dérouler le drapeau palestinien sur les remparts.</p>
+                        <a href="https://www.ledauphine.com/culture-loisirs/2024/03/14/100-sommets-pour-gaza-le-pari-reussi-d-un-savoyard">Lire sur le Dauphiné "100 sommets pour Gaza : le pari réussi d'un Savoyard"</a>      
                     </article>                                     
-                    <article id="article4">
-                        <button class="plus-btn" value="4">&#x2795;</button>
+                    <article id="article8"><!--NON RSS-->
+                        <button class="plus-btn" value="8">&#x2795;</button>
                         <span class="idback" id="films"></span>
                         <h3>Coup de projecteur sur la Palestine</h3>
                         <p>Cet évènement a lieu chaque année au cinéma Émeraude de Dinan.</p>
-                        <p>Description</p>
-                        <p>Dates 2024</p>
+                        <p>Précisions à venir</p>
+                        <p>Abonnez-vous au flux RSS pour ne rater aucune publication.</p>
+                        <p>Semaine 20 </p>
                         <a target="_blank" href="https://www.ouest-france.fr/bretagne/dinan-22100/dinan-coup-de-projecteur-sur-la-palestine-a-lemeraude-cinemas-862f1d2c-ed7e-11ed-bcc2-53a6cf3b81bf">
                                 Retrouvez sur le site de Ouest-France un article sur l'édition 2023
                         </a>
                     </article>
-                    <article id="article5">
-                        <button class="plus-btn" value="5">&#x2795;</button>
+                    <article id="article9"><!--NON RSS-->
+                        <button class="plus-btn" value="9">&#x2795;</button>
                         <span class="idback" id="order"></span>
                         <h3>Commande de produits de Palestine</h3>
-                        <p>Possibilité de commander via l'association des dattes ou de l'huile d'olive de Palestine.</p>
-                        <p>à compléter (?????)/où va l'argent récolté, d'où viennent exactement les produits</p>
+                        <p>Possibilité de commander via l'association de dattes ou d'huile d'olive de Palestine.</p>
+                        <p>article en cours d'écriture</p>
+                        <p>Abonnez-vous au flux RSS pour ne rater aucune publication.</p>
                         <a href="#contact">Plus de renseignements.</a>
                     </article>
-                    <article id="article6">
-                        <button class="plus-btn" value="6">&#x2795;</button>
+                    <article id="article10">
+                        <button class="plus-btn" value="10">&#x2795;</button>
                         <span class="idback" id="bds"></span>
                         <h3>Boycott Désinvestissement Sanction</h3>
                         <div>
-                        <img loading="lazy" class="float-right" src="./assets/images/bds.webp" alt="BDS">
+                        <img loading="lazy" class="float-right float-right_grow" src="./assets/images/bdsdinan.webp" alt="BDS">
                         <p>Dans le cadre de la campagne BDS plusieurs actions ont été menée à Dinan.</p>
-                        <p>Un exemple?????</p></div>
+                        <p>C'était le cas, par exemple samedi 11 mars 2023 devant le Carrefour Market du centre ville.</p></div>
                         <a target="_blank" href="https://www.bdsfrance.org/qui-sommes-nous/charte-de-la-campagne-bds-france/">Charte de la campagne BDS                            
                         </a>
                         <a target="_blank" href="https://fr.wikipedia.org/wiki/Boycott,_d%C3%A9sinvestissement_et_sanctions">Lire plus                          
-                        </a>                 
+                        </a>   
+                        <a target="_blank" href="https://www.ouest-france.fr/bretagne/dinan-22100/a-dinan-le-comite-france-palestine-denonce-les-investissements-du-groupe-carrefour-en-israel-d20e7872-c0ca-11ed-b970-b00e858360f1">
+                            Article de Ouest-France
+                        </a>              
                     </article>                
 
                 </div>
             </div>
         </section>
+<!-- SECTION 2 ACTIONS -->
+
+
+<!-- SECTION 3 COMPRENDRE -->        
         <section class="comprendre heading-3">
             <span class="idback" id="comprendre"></span>
             <div class="title">
                 <h2>Pour comprendre la situation</h2>
             </div>
             <div class="futher"> 
+                <article id="article14">
+                    <button class="plus-btn" value="14">&#x2795;</button>
+                    <h3>la situation expliquée simplement, avec les médias actuels</h3>
+                    <iframe width="280" height="158" src="https://www.youtube.com/embed/rmNIicvax_E?si=jwi9ljjqISWLnnSV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <p>Si vous trouvez fastidieux de lire un pdf ou les nombreux articles très complets 
+                        (et parfois complexes) que propose le site national de l'AFPS, nous vous conseillons ce nouveau média créé par 
+                        Victoria Géraut-Velmont et Ismaël Saidi.</p>
+                    <p>Victoria est journaliste, diplômée de Science Politique et juive.</p>
+                    <p>Ismaël est écrivain, comédien, metteur en scène et musulman.</p>
+                    <p>Ensemble ils ont créé "Proche ourien", ils y expliquent la situation, l'histoire, avec des mots simples
+                        et sans parti pris.</p>
+                    <p>Vous pouvez les suivre sur votre plateforme préférée, YouTube, Instagram, Tiktok ou Facebook.</p>
+                    <a target="_blank" href="https://procheourien.wixstudio.io/procheourien">Proche Ourien</a>
+                    <div class="ourien">
+                        <a target="_blank" href="https://www.instagram.com/proche_ourien/"><img src="/assets/icons/instagram.png" alt="instagram proche ourien"></a>
+                        <a target="_blank" href="https://www.tiktok.com/@procheourien"><img src="/assets/icons/tiktok.png" alt="tiktok proche ourien"></a>
+                        <a target="_blank" href="https://www.facebook.com/profile.php?id=61556142350016"><img src="/assets/icons/facebook.png" alt="facebook proche ourien"></a>
+                        <a target="_blank" href="https://www.youtube.com/@proche_ourien"><img src="/assets/icons/youtube.png" alt="youtube proche ourien"></a>
+                    </div>
+                </article>
+                <article id="article13">
+                    <button class="plus-btn" value="13">&#x2795;</button>
+                    <h3 id="debat1">soirée débat spéciale Gaza par David Dufresne</h3>
+                    <iframe class="auposte" title="Gaza, désastre en direct" width="280" height="158" src="https://peertube.stream/videos/embed/d13be5e5-9578-47ca-82ba-9aff2c33ef08" frameborder="0" allowfullscreen="" sandbox="allow-same-origin allow-scripts allow-popups"></iframe>
+                    <p>Regardez en différé la soirée débat spéciale Gaza, en collaboration avec Medecins du Monde.</p>
+                    <p>Étaient présent·es Louise Bichet, responsable des opérations Moyen-Orient de Médecins du Monde, 
+                        de retour de Gaza, pour un témoignage de retour du terrain ; Julia Grignon, directrice scientifique de l'IRSEM, 
+                        présidente de la sous-commission Droit international humanitaire et action humanitaire de la CNCDH, 
+                        pour nous parler du Droit International Humanitaire en péril, et Jean-François Corty, médecin, 
+                        vice-président de Médecins du Monde et chercheur associé à l'IRIS.</p>
+                </article>
+                <article class="pdf">
+                    <h3>
+                    Témoignage d'un médecin humanitaire.
+                    </h3>   
+                    <p class="no-maj">"Depuis 30 ans qu'il parcourt le monde sur tous les terrains de guerre ou de catastrophe naturelle, le médecin humanitaire Raphaël Pitti confesse n'avoir jamais connu « un tel chaos, un tel drame » qu'à Gaza. De passage à Paris, il nous raconte les coulisses apocalyptiques de cet endroit."</p>             
+                    <a href="https://www.letelegramme.fr/monde/israel-palestine/a-gaza-loccident-a-perdu-tout-sens-des-valeurs-denonce-un-medecin-humanitaire-6549893.php" target="_blank">à lire dans le Télégramme</a>
+                </article>
                 <article  class="pdf">
 
                     <h3>
-                        Law for Palestine publie une base de données contenant plus de 500 cas d'incitation israélienne au génocide - mise à jour en continu
+                        Law for Palestine publie une base de données contenant plus de 500 cas d'incitation israélienne au génocide 
+                        - mise à jour en continu
                     </h3>                
                     <embed src="assets/documents/Law-for-Palestine-Database-of-Israeli-Incitement-to-Genocide.pdf"  type="application/pdf"/>
                     <a href="https://law4palestine.org/law-for-palestine-releases-database-with-500-instances-of-israeli-incitement-to-genocide-continuously-updated/" target="_blank">Lire sur le site Law for Palestine</a>
-                    <a href="assets/documents/Law-for-Palestine-Database-of-Israeli-Incitement-to-Genocide.pdf">Télécharger</a>
+                    <a  target="_blank"  href="assets/documents/Law-for-Palestine-Database-of-Israeli-Incitement-to-Genocide.pdf">Télécharger</a>
                 </article>
                 <article class="pdf">
                         <h3>
                             Fascicule histoire Israël et Palestine par Marie-Jo Parbot
                         </h3>                
                         <embed src="assets/documents/Fascicule histoire Israël et Palestine par Marie-Jo Parbot 2023.pdf"  type="application/pdf"/>
+                        <p>Marie-Jo, membre de notre association, a rédigé un petit fascule pour nous aider à comprendre l'histoire 
+                            de la région. N'hésitez pas à le consulter, le télécharger et le diffuser.</p>
                 </article>
                 <article class="pdf">
                     <h3>
-                    Résolution sur le génocide en cours et les autres crimes commis par Israël à Gaza et contre le peuple palestinien de la Fédération internationale des Droits Humains (FIDH)
+                    Résolution sur le génocide en cours et les autres crimes commis par Israël à Gaza et contre le peuple 
+                    palestinien de la Fédération internationale des Droits Humains (FIDH)
                     </h3>                
                     <embed src="assets/documents/resolutiongenocidefr-2023-12-11-5.pdf" type="application/pdf"/>
                     <a href="https://www.fidh.org/fr/regions/maghreb-moyen-orient/israel-palestine/dossier-retour-sur-le-conflit-israel-palestine" target="_blank">Lire sur le site national de la Fédération internationale des Droits Humains (FIDH)</a>
-                    <a href="assets/documents/resolutiongenocidefr-2023-12-11-5.pdf">Télécharger</a>
+                    <a target="_blank"  href="assets/documents/resolutiongenocidefr-2023-12-11-5.pdf">Télécharger</a>
                 </article>
                 <article>
                     <figure>
                         <div class="h3-container">
                             <h3>
-                    Un génocide est en cours à Gaza : il faut l'arrêter ! Soutien à l'Afrique du Sud dans sa requête auprès de la Cour internationale de justice
+                    Un génocide est en cours à Gaza : il faut l'arrêter ! Soutien à l'Afrique du Sud dans sa requête auprès de la 
+                    Cour internationale de justice
                             </h3>          
                             <img loading="lazy" src="./assets/images/art1.webp" alt="Gaza"> 
                         </div>  
                         <figcaption>
                             <p>
-                                Il y a maintenant trois mois, Israël lançait une agression totale contre la bande de Gaza et le peuple palestinien en riposte à l'attaque des commandos du Hamas le 7 octobre.
+                                Il y a maintenant trois mois, Israël lançait une agression totale contre la bande 
+                                de Gaza et le peuple palestinien en riposte à l'attaque des commandos du Hamas le 7 octobre.
                             </p>
                             <p>
-                                Trois mois de massacres, de transferts forcés, de destructions massives : Israël bombarde, affame, tue la population de Gaza, territoire dévasté, « lieu de mort inhabitable ».Trois mois de mobilisation des peuples de nombreux pays, dont la France, pour exiger un cessez-le feu immédiat et permanent, et que s'arrête ce nettoyage ethnique programmé.
+                                Trois mois de massacres, de transferts forcés, de destructions massives : Israël bombarde, 
+                                affame, tue la population de Gaza, territoire dévasté, « lieu de mort inhabitable ». 
+                                Trois mois de mobilisation des peuples de nombreux pays, dont la France, pour exiger 
+                                un cessez-le feu immédiat et permanent, et que s'arrête ce nettoyage ethnique programmé.
                             </p>
                             <p>
-                                Mais aussi trois mois de soutien inconditionnel (puis très modérément critique) à Israël de nos gouvernants qui n'ont toujours pas condamné les crimes de guerres, crimes contre l'humanité, crime de génocide commis par l'armée israélienne à l'encontre du peuple palestinien...
+                                Mais aussi trois mois de soutien inconditionnel (puis très modérément critique) à Israël 
+                                de nos gouvernants qui n'ont toujours pas condamné les crimes de guerres, crimes contre l'humanité, 
+                                crime de génocide commis par l'armée israélienne à l'encontre du peuple palestinien...
                             </p>
                             <a class="margin-link1" href="https://www.france-palestine.org/Un-genocide-est-en-cours-a-Gaza-il-faut-l-arreter-Soutien-a-l-Afrique-du-Sud" target="_blank">Lire la suite sur le site l'AFPS</a>
                         </figcaption> 
@@ -424,7 +589,14 @@
                         </div>  
                         <figcaption>
                             <p>
-                                Mercredi 18 octobre, le Conseil d'État s'est prononcé contre l'interdiction systématique des rassemblements et manifestations en solidarité avec la Palestine. Mais, en même temps, il n'a pas désavoué le courrier envoyé aux préfets le 12 octobre par Gérald Darmanin leur demandant de les interdire. Il a donc choisi de laisser aux préfets la responsabilité d'interdire ou pas nos rassemblements et manifestations. Dans les faits les arrêtés d'interdiction continuent de pleuvoir obligeant les associations (dont l'AFPS) à utiliser les recours en référé-liberté devant les tribunaux administratifs. C'est une démarche juridique énergivore et coûteuse mais qui peut permettre de reprendre l'initiative politique tout à fait légalement après une tentative de nous faire taire...
+                                Mercredi 18 octobre, le Conseil d'État s'est prononcé contre l'interdiction systématique des 
+                                rassemblements et manifestations en solidarité avec la Palestine. Mais, en même temps, il n'a pas 
+                                désavoué le courrier envoyé aux préfets le 12 octobre par Gérald Darmanin leur demandant de les interdire. 
+                                Il a donc choisi de laisser aux préfets la responsabilité d'interdire ou pas nos rassemblements et manifestations. 
+                                Dans les faits les arrêtés d'interdiction continuent de pleuvoir obligeant les associations (dont l'AFPS) à 
+                                utiliser les recours en référé-liberté devant les tribunaux administratifs. C'est une démarche juridique 
+                                énergivore et coûteuse mais qui peut permettre de reprendre l'initiative politique tout à fait légalement après 
+                                une tentative de nous faire taire...
                             </p>
                             <a class="margin-link1" href="https://www.france-palestine.org/Rassemblements-et-manifestations-dans-toute-la-France-Halte-au-massacre-a-Gaza" target="_blank">Lire la suite sur le site l'AFPS</a>
                         </figcaption> 
@@ -455,7 +627,8 @@
                                 - Arrêt de toute coopération militaire et sécuritaire avec Israël
                             </p>
                             <p>
-                                - Incitation de la Cour pénale internationale à mener enfin activement ses enquêtes sur les crimes commis contre les Palestiniens
+                                - Incitation de la Cour pénale internationale à mener enfin activement ses enquêtes sur les crimes 
+                                commis contre les Palestiniens
                             </p>
                             <div class="margin-link2">
                                 <a  href="https://www.france-palestine.org/Petition-Halte-au-massacre-a-Gaza" target="_blank">Lire l'intégralité sur le site l'AFPS</a>
@@ -467,6 +640,10 @@
                 </article>            
             </div>
         </section>
+<!-- SECTION 3 COMPRENDRE --> 
+
+
+<!-- SECTION 4 LIENS -->
         <section class="liens heading-4">
             <span class="idback" id="liens"></span>
             <div class="title">
@@ -477,17 +654,22 @@
                 <div class="link-container">
                     <h4>AFPS nationale</h4>
                     <p>De nombreuses ressources et documentations pour aller plus loin</p>
-                    <a target="_blank" href="https://www.france-palestine.org/">Association France Palestine Solildarité</a>
+                    <a target="_blank" href="https://www.france-palestine.org/">Association France Palestine Solildarité FRANCE</a>
                 </div>
                 <div class="link-container">
                     <h4>AFPS St Brieuc</h4>
                     <p>N'hésitez pas à aller lire le site de nos voisins</p>
-                    <a target="_blank" href="http://www.afps-saint-brieuc.fr/">Association France Palestine Solildarité</a>
+                    <a target="_blank" href="http://www.afps-saint-brieuc.fr/">Association France Palestine Solildarité SAINT BRIEUC</a>
+                </div>
+                <div class="link-container">
+                    <h4>AFPS du Trégor</h4>
+                    <p>N'hésitez pas à aller lire le site de nos autres voisins</p>
+                    <a target="_blank" href="https://palestinesolidaritetregor.jimdofree.com/">Association France Palestine Solildarité TRÉGOR</a>
                 </div>
                 <div class="link-container">
                     <h4>AFPS Rennes</h4>
-                    <p>N'hésitez pas à aller lire le site de nos autres voisins</p>
-                    <a target="_blank" href="hhttps://rennespalestine.fr/">Association France Palestine Solildarité</a>
+                    <p>N'hésitez pas à aller lire le site de nos autres voisins (et oui nous avons beaucoup de voisins)</p>
+                    <a target="_blank" href="https://rennespalestine.fr/">Association France Palestine Solildarité RENNES</a>
                 </div>
             </article>
             <article>
@@ -496,16 +678,25 @@
                     <h4>UJFP</h4>
                     <p>Union Juive Française pour la paix</p>
                     <a target="_blank" href="https://ujfp.org/">Association France Palestine Solildarité</a>
-                </div>                
+                </div>     
+                <div class="link-container">
+                    <h4>BDS</h4>
+                    <p>Boycott Désinvestissement Sanctions</p>
+                    <a target="_blank" href="https://www.bdsfrance.org/">BDS France </a>
+                </div>             
             </article>
 
             <article>
-                <h3>Pour soutenir Ibrahim, Shaden et leurs enfants:</h3>
+                <h3 id="awad">Pour soutenir Ibrahim, Shaden et leurs enfants:</h3>
                 <a target="_blank" href="https://www.cyberacteurs.org/cyberactions/lafrancemenacedexpulserunefamillega-6568.html">
-                    Cyberaction : la France menace d’expulser une famille gazaouie
+                    Cyberaction : la France menace d'expulser une famille gazaouie
                 </a>
             </article>
         </section>
+<!-- SECTION 4 LIENS -->
+
+
+<!-- SECTION 5 CONTACT -->        
         <section class="contact heading-5">
             <span class="idback" id="contact"></span>
             <div class="title">
@@ -514,19 +705,24 @@
             <a href="mailto:afpsdinan22@gmail.com">Envoyer un mail à afpsdinan22@gmail.com</a>
             <div class="fb-page" data-href="https://www.facebook.com/AfpsDinan/" data-tabs="timeline" data-width="180" data-height="70" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/AfpsDinan/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/AfpsDinan/">AFPS Dinan</a></blockquote></div>
             <div>
-               <h3 class="link-contact-form"><a href="/contact.php">form à venir</a></h3>
+               <h3 class="link-contact-form"><a href="/contact.php">formulaire</a></h3>
             </div>
             <footer>
+                <a class="legals legals-links" href="/legals.html">mentions légales</a>
+                <a class="membres" href="/membres/">Espace membres</a>
                 <a class="lazez" href="https://lazezbzh.ovh/" target="_blank">Créé par Lazez BZH Sites Web</a>
             </footer>
         </section>
+<!-- SECTION 5 CONTACT --> 
+
 
     </div>
 
     <div id="fb-root"></div>
 
+    <!-- ARTICLES EN ZOOM -->
     <div class="articles" id="root">
- 
+
     <script src="./JS/utils.js"></script>
     <script  src="./JS/i18n.js"></script>
     <script src="./JS/script.js"></script>
@@ -534,6 +730,7 @@
     <script src="./JS/observers.js"></script>
     <script src="./JS/slider.js"></script>
     <script src="./JS/articles.js"></script>
+          
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0" nonce="XZDJw0zo"></script>
 </body>

@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
  <channel>
  <title>AFPS Dinan</title>
- <link>https://afps-dinan.netlify.app/</link>
+ <link>https://afps-dinan.ovh/</link>
  <description>Flux d'actualités du site AFPS Dinan</description>
 <language>fr</language>
 <copyright>Copyright 2024 Lazez BZH Sites Web</copyright>
@@ -10,41 +10,98 @@
 <image>
 <title>AFPS Dinan</title>
 <url>
-https://afps-dinan.netlify.app/assets/images/meta.png
+https://afps-dinan.ovh/assets/images/meta.webp
 </url>  
 <link>
-https://afps-dinan.netlify.app/
+https://afps-dinan.ovh/
 </link>
 </image>
-<atom:link href="https://afps-dinan.netlify.app/rss.xml" rel="self" type="application/rss+xml" />
+<atom:link href="https://afps-dinan.ovh/rss.xml" rel="self" type="application/rss+xml" />
+
+
 <item>
  <title>Notre association</title>
- <link>https://afps-dinan.netlify.app?id=1</link>
- <guid isPermaLink="true">https://afps-dinan.netlify.app/#article1</guid>
- <pubDate>Mon, 19 Fev 2024 12:00:00 GMT</pubDate>
- <description>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus ex dolor, accumsan ut elit vitae, elementum tincidunt ante. Nulla mauris elit, porta a augue eget, bibendum lacinia arcu. Nam ac felis nunc. Proin non varius risus. Ut tincidunt nisi ut nulla imperdiet tristique. Vestibulum sapien felis, pharetra aliquam quam ut, congue volutpat justo. Pellentesque sollicitudin rhoncus diam, sed tempor dui lobortis vitae. Duis felis magna, tincidunt suscipit magna id, tempor facilisis nisl.</description>
+ <link>https://afps-dinan.ovh?id=1</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=1</guid>
+ <pubDate>Mon, 25 Mar 2024 12:00:00 GMT</pubDate>
+ <description>Créée début 2009, époque de l'opération Plomb durci, l'AFPS-Dinan compte actuellement une vingtaine d'adhérents ainsi que de nombreux sympathisants.</description>
 </item>
 
 <item>
  <title>Nos actions en bref</title>
- <link>https://afps-dinan.netlify.app?id=3</link>
- <guid isPermaLink="true">https://afps-dinan.netlify.app?id=3</guid>
- <pubDate>Mon, 19 Fev 2024 14:00:00 GMT</pubDate>
+ <link>https://afps-dinan.ovh?id=2</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=2</guid>
+ <pubDate>Mon, 25 Mar 2024 12:30:00 GMT</pubDate>
  <description>Rassemblement hebdomadaire de soutien au cessez-le-feu; Réunion mensuelle;...</description>
 </item>
+
 <item>
- <title>Coup de projecteur sur la Palestine</title>
- <link>https://afps-dinan.netlify.app?id=4</link>
- <guid isPermaLink="true">https://afps-dinan.netlify.app?id=4</guid>
- <pubDate>Mon, 19 Fev 2024 15:00:00 GMT</pubDate>
- <description>Maecenas posuere iaculis ipsum. Nam vel tellus ut justo lacinia sagittis vel eget nisl. Sed non enim non quam viverra dignissim tempus vel leo. Cras posuere pellentesque ante sit amet eleifend. Cras eget leo ut arcu convallis porta. Aliquam feugiat enim quis erat pharetra, sed egestas lectus laoreet. Suspendisse non sollicitudin elit, nec mattis nibh. Suspendisse potenti. Vestibulum lobortis nulla a varius ultrices. Nulla ut lorem sed metus eleifend tempus. Phasellus euismod nec lorem id venenatis. Nulla lobortis felis a auctor fermentum.</description>
+ <title>Réunion publique</title>
+ <link>https://afps-dinan.ovh?id=3</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=3</guid>
+ <pubDate>Mon, 25 Mar 2024 13:00:00 GMT</pubDate>
+ <description>Une réunion publique avec Dominique Le Duff et Joëlle Couillandre, tous deux membres de l'AFPS de Rennes se tiendra le vendredi 19 avril au soir.</description>
 </item>
+
+
 <item>
- <title>LAW FOR PALESTINE PUBLIE UNE BASE DE DONNÉES CONTENANT PLUS DE 500 CAS D'INCITATION ISRAÉLIENNE AU GÉNOCIDE - MISE À JOUR EN CONTINU</title>
- <link>https://afps-dinan.netlify.app?id=5</link>
- <guid isPermaLink="true">https://afps-dinan.netlify.app?id=5</guid>
- <pubDate>Sun, 18 Fev 2024 14:00:00 GMT</pubDate>
- <description>500 CAS D'INCITATION ISRAÉLIENNE AU GÉNOCIDE</description>
+ <title>Rassemblement hebdomadaire</title>
+ <link>https://afps-dinan.ovh?id=4</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=4</guid>
+ <pubDate>Mon, 25 Mar 2024 14:00:00 GMT</pubDate>
+ <description>Depuis le 13 octobre 2023, se tient tous les vendredis soirs, place Duclos à Dinan, une veillée de soutien au peuple palestinien.</description>
 </item>
+
+
+<item>
+ <title>Repas de solidarité avec Gaza</title>
+ <link>https://afps-dinan.ovh?id=5</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=5</guid>
+ <pubDate>Mon, 25 Mar 2024 14:30:00 GMT</pubDate>
+ <description>Le 28 février 2024, s'est tenu à la salle des fêtes de Lanvallay un repas de solidarité avec Gaza.</description>
+</item>
+
+
+<item>
+ <title>Boycott Désinvestissement Sanction</title>
+ <link>https://afps-dinan.ovh?id=10</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=10</guid>
+ <pubDate>Mon, 25 Mar 2024 15:00:00 GMT</pubDate>
+ <description>Dans le cadre de la campagne BDS plusieurs actions ont été menée à Dinan.</description>
+</item>
+
+<item>
+ <title>AUDIENCE DE LA FAMILLE AWAD AU TRIBUNAL ADMINSTRATIF DE RENNES</title>
+ <link>https://afps-dinan.ovh?id=11</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=11</guid>
+ <pubDate>Thu, 26 Mar 2024 14:00:00 GMT</pubDate>
+ <description> Le jeudi 4 avril à 10h30, audience de la famille Awad au tribunal administratif de Rennes La famille AWAD appelle à un large soutien à cette audience pour demander l'annulation de leur OQTF et leur régularisation.</description>
+</item>
+
+<item>
+ <title>SAUVER DE LA MORT NOTRE FAMILLE À GAZA</title>
+ <link>https://afps-dinan.ovh?id=12</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=12</guid>
+ <pubDate>Thu, 26 Mar 2024 14:30:00 GMT</pubDate>
+ <description>Nous relayons ici l'appel de notre ami Ibrahim. Dans cet article sa demande et le lien pour la cagnotte. "Mes parents, ma sœur, mes frères ma belle-sœur et mes neveux doivent d'urgence se mettre en sécurité en quittant la Bande de Gaza pour aller en Egypte."</description>
+</item>
+
+<item>
+ <title>Soirée débat spéciale Gaza par David Dufresne</title>
+ <link>https://afps-dinan.ovh?id=13</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=13</guid>
+ <pubDate>Wed, 27 Mar 2024 21:30:00 GMT</pubDate>
+ <description>Regardez en différé la soirée débat spéciale Gaza, en collaboration avec Medecins du Monde.</description>
+</item>
+
+<item>
+ <title>La situation expliquée simplement, avec les médias actuels</title>
+ <link>https://afps-dinan.ovh?id=14</link>
+ <guid isPermaLink="true">https://afps-dinan.ovh?id=14</guid>
+ <pubDate>Tue, 02 Apr 2024 10:30:00 GMT</pubDate>
+ <description>Victoria Géraut-Velmont et Ismaël Saidi ont créé "Proche ourien", ils y expliquent la situation, l'histoire, avec des mots simples et sans parti pris. Vous pouvez les suivre sur votre plateforme préférée, YouTube, Instagram, Tiktok ou Facebook.</description>
+</item>
+
+
  </channel>
 </rss>

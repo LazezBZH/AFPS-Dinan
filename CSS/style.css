@@ -5,7 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 html::-webkit-scrollbar {
   display: none;
@@ -16,6 +16,9 @@ html::-webkit-scrollbar {
   --lowgreen: rgba(37, 157, 81, 0.92);
   --red: #ce061f;
   --black: black;
+  --white: whitesmoke;
+  --bg1: rgba(245, 245, 245, 0.8);
+  --bg: rgba(255, 255, 255, 0.7);
 }
 .grey {
   color: var(--grey);
@@ -48,8 +51,8 @@ a.normal-link {
   text-decoration: underline var(--green);
 }
 h1 {
-  background-color: black;
-  color: whitesmoke;
+  background-color: var(--black);
+  color: var(--white);
   padding: 5px 20px 20px 20px;
   border-radius: 15px;
   font-size: 3rem;
@@ -70,6 +73,8 @@ h2 {
 h3 {
   text-transform: uppercase;
   color: var(--red);
+  padding-right: 50px;
+  padding-bottom: 10px;
 }
 
 p::first-letter {
@@ -105,7 +110,7 @@ header {
 }
 
 nav {
-  background-color: black;
+  background-color: var(--black);
   position: absolute;
   top: 30dvh;
   left: 0;
@@ -119,7 +124,7 @@ nav {
   user-select: none;
 }
 nav a {
-  color: whitesmoke;
+  color: var(--white);
   text-decoration: none;
   font-weight: bold;
 }
@@ -144,12 +149,13 @@ article {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(245, 245, 245, 0.8);
+  background-color: var(--bg1);
   padding: 2dvh;
   border-radius: 5px;
   gap: 1dvh;
   max-width: 500px;
   position: relative;
+  margin-bottom: 1rem;
 }
 article .more-pad:last-child {
   padding-bottom: 1rem;
@@ -167,6 +173,21 @@ figure img {
 }
 figcaption {
   padding-bottom: 2rem;
+}
+.attention {
+  padding: 0 0.5rem;
+  border-radius: 20px;
+  margin-right: 0.5rem;
+  text-decoration: none;
+  font-weight: bolder;
+}
+.attention1 {
+  color: var(--white);
+  background-color: var(--red);
+}
+.attention2 {
+  color: var(--red);
+  background-color: var(--white);
 }
 
 .container {
@@ -203,7 +224,7 @@ figcaption {
   left: 50%;
   bottom: 5px;
   transform: translateX(-50%);
-  color: white;
+  color: var(--white);
   font-size: 1rem;
 }
 .link-top {
@@ -213,7 +234,7 @@ figcaption {
 }
 .link-top a {
   text-decoration: none;
-  color: white;
+  color: var(--white);
   cursor: pointer;
 }
 .bigger {
@@ -227,7 +248,7 @@ figcaption {
   background-color: var(--green);
   display: flex;
   align-items: center;
-  color: white;
+  color: var(--white);
   font-size: 1.2rem;
   padding: 10px;
   justify-content: space-between;
@@ -239,12 +260,12 @@ figcaption {
   padding-right: 15px;
   padding-left: 5px;
 }
-.actu span {
+#brief-links {
   text-align: left;
   flex-grow: 1;
 }
 .actu p::first-letter {
-  color: white;
+  color: var(--white);
 }
 .actu a {
   color: black;
@@ -273,7 +294,7 @@ figcaption {
 .desk-nav li:hover ul {
   display: inherit;
   position: fixed;
-  background-color: black;
+  background-color: var(--black);
   padding: 2dvh;
   border-radius: 0 0 10px 100px;
 }
@@ -297,6 +318,11 @@ a.active {
   position: absolute;
   top: -10dvh;
 }
+#cagnotte,
+#audience {
+  position: absolute;
+  top: -5rem;
+}
 
 .title {
   display: flex;
@@ -309,7 +335,7 @@ a.active {
 .comprendre a,
 .liens a,
 .contact a {
-  background-color: whitesmoke;
+  background-color: var(--white);
   padding: 0.2rem;
   border-radius: 2px;
 }
@@ -326,6 +352,12 @@ a.active {
   display: flex;
   justify-content: end;
   gap: 2rem;
+}
+.liens h3 {
+  width: 100%;
+  font-size: 1.8rem;
+
+  text-align: center;
 }
 
 /* accueil */
@@ -347,11 +379,28 @@ a.active {
   align-items: center;
   gap: 1dvh;
 }
+.agenda-container aside {
+  display: flex;
+  justify-content: space-around;
+}
+.agenda-container aside div {
+  width: 30%;
+  flex-grow: 0.3;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.agenda-container aside iframe {
+  width: 550px;
+  height: 400px;
+}
 
 .black-bg {
-  background-color: black;
-  color: whitesmoke;
-  padding: 0.2rem 0.5rem;
+  background-color: var(--black);
+  color: var(--white);
+  padding: 0.5rem 0.8rem;
   border-radius: 2px;
   max-width: min(90dvw, 900px);
 }
@@ -391,19 +440,30 @@ a.active {
   border-radius: 5px;
   gap: 1dvh;
 }
+.actions h3::-webkit-scrollbar,
+.actions a::-webkit-scrollbar {
+  display: none;
+}
+.actions article div {
+  max-height: 55dvh;
+}
+
 .futher {
   width: 90dvw;
   max-width: 1200px;
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
   justify-content: center;
   padding: 2dvh;
   border-radius: 5px;
   gap: 1dvh;
 }
-.pdf {
+
+.futher article {
   max-width: 45%;
+  display: flex;
+  justify-content: space-between;
 }
 .pdf embed {
   width: 100%;
@@ -416,14 +476,41 @@ a.active {
   align-items: center;
   gap: 1rem;
 }
+.ourien {
+  width: 100%;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.ourien a {
+  background-color: transparent;
+}
 /* articles */
 .float-right {
   width: 35%;
   margin: 3rem 1rem;
   float: right;
 }
-.float-right:hover {
-  transform: scale(1.2);
+.float-right_grow:hover {
+  min-width: 50dvw;
+  max-width: 250px;
+  max-height: 50dvh;
+  object-fit: contain;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+}
+.articles .float-right_grow:hover {
+  width: 80%;
+  height: 80%;
+  top: 0%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.articles article {
+  overflow: visible;
 }
 /* liens */
 .liens article {
@@ -473,7 +560,7 @@ a.active {
   padding: 8px 8px 8px 24px;
   text-decoration: none;
   font-size: 1.5rem;
-  color: whitesmoke;
+  color: var(--white);
   display: block;
   transition: 0.3s;
   font-weight: bold;
@@ -481,6 +568,9 @@ a.active {
 }
 .sidenav a.active {
   color: var(--green);
+}
+nav a.links_w {
+  color: var(--white);
 }
 .sidenav a:hover {
   color: var(--red);
@@ -497,11 +587,11 @@ a.active {
 }
 .sidenavLi a {
   padding-left: 8px;
-  color: rgba(245, 245, 245, 0.8);
+  color: var(--bg1);
 }
 .sidenavLi::before {
   content: "\0025B8";
-  color: rgba(245, 245, 245, 0.8);
+  color: var(--bg1);
 }
 .sidenav.visible {
   left: 0;
@@ -517,8 +607,8 @@ a.active {
   right: 10px;
   font-size: 20px;
   font-weight: bold;
-  color: whitesmoke;
-  border: solid 3px whitesmoke;
+  color: var(--white);
+  border: solid 3px var(--white);
   border-radius: 50%;
   text-align: center;
   line-height: 22px;
@@ -527,7 +617,7 @@ a.active {
 .sidenav .close:hover {
   color: var(--red);
   border: solid 3px var(--red);
-  background-color: whitesmoke;
+  background-color: var(--white);
 }
 .burger-icon span {
   display: block;
@@ -1136,6 +1226,18 @@ a.active {
     content: "A.F.P.S DINAN (22)";
   }
 }
+
+/* mentions légales */
+.legals-container {
+  width: 95%;
+  max-width: 1200px;
+  margin: auto;
+  line-height: 2rem;
+  padding-bottom: 2rem;
+}
+.bold {
+  font-weight: bold;
+}
 /* lang switcher */
 .lang-btn {
   position: fixed;
@@ -1167,27 +1269,41 @@ a.active {
 footer {
   width: 100dvw;
   height: 40px;
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
   position: fixed;
   bottom: 0%;
   padding: 0 15px;
   display: flex;
   align-items: center;
-  justify-content: right;
+  justify-content: space-between;
 }
 .lazez,
-.lazez2 {
-  font-size: 0.8rem;
+.lazez2,
+.legals,
+.legals2,
+.lazez3,
+.membres {
+  font-size: 0.6rem;
 }
-a.lazez2 {
+a.lazez3 {
+  width: 100%;
+  color: var(--white);
+  text-decoration: none;
+  text-align: right;
+}
+
+a.lazez2,
+a.legals2 {
   color: initial;
   text-decoration: underline;
   padding: 0.1rem 0.5rem;
-  background-color: whitesmoke;
+  background-color: var(--white);
   border-radius: 5px;
 }
-a.lazez {
+a.lazez,
+a.legals,
+a.membres {
   color: initial;
   text-decoration: underline;
   padding: 0.1rem 0.5rem;
@@ -1218,20 +1334,22 @@ a.lazez {
   width: 100%;
   min-height: 100dvh;
   background-color: var(--lowgreen);
-  position: fixed;
+  position: absolute;
   top: 0;
+  bottom: 0;
   display: none;
   z-index: 999;
 }
 .articles article {
   /* min-width: 70dvw; */
   min-width: min(700px, 90dvw);
+  /* height: 90dvh; */
   background-color: var(--grey);
   position: absolute;
+  top: 50px;
   left: 50%;
-  top: 0;
   transform: translateX(-50%);
-  margin-top: 10dvh;
+
   padding: 2rem;
   font-size: 1.8rem;
 }
@@ -1271,7 +1389,7 @@ a.lazez {
 }
 .link-contact-form a {
   padding: 2rem;
-  cursor: not-allowed;
+  /* cursor: not-allowed; */
 }
 .form-container {
   display: flex;
@@ -1292,7 +1410,7 @@ a.lazez {
   align-items: center;
   gap: 1rem;
   position: relative;
-  color: white;
+  color: var(--white);
 }
 #contactForm fieldset {
   padding: 2rem;
@@ -1337,9 +1455,9 @@ a.lazez {
 
 .error-msg {
   z-index: 1;
-  background-color: red;
+  background-color: var(--red);
   padding: 1rem;
-  color: white;
+  color: var(--white);
   display: flex;
   justify-content: center;
   width: 98dvw;
@@ -1353,6 +1471,21 @@ a.lazez {
 /* RESPONSIVE */
 
 @media screen and (max-width: 800px) {
+  .agenda-container aside iframe {
+    width: 90dvw;
+    max-width: 600px;
+    height: 400px;
+  }
+  .futher {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .futher article {
+    max-width: 95%;
+
+    justify-content: center;
+  }
   .rss {
     position: absolute;
     left: 50%;
@@ -1416,7 +1549,7 @@ a.lazez {
     font-size: 1.2rem;
     border: solid 2px var(--red);
     color: var(--red);
-    background-color: black;
+    background-color: var(--black);
     line-height: 1.5rem;
     cursor: url("../assets/images/colombe-red.svg"), pointer;
   }
@@ -1434,6 +1567,26 @@ a.lazez {
   }
   .pdf {
     max-width: 95%;
+  }
+  .agenda-container aside {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .agenda-container aside div {
+    width: 80%;
+    flex-grow: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+  .actions {
+    justify-content: center;
+  }
+  h3 {
+    max-width: 88%;
   }
 }
 
@@ -1462,6 +1615,11 @@ a.lazez {
     left: 50%;
     transform: translate(-50%, -50%);
   }
+  /* iframe.auposte {
+    width: 560;
+    height: 315;
+ 
+  } */
 }
 @media screen and (max-width: 600px) {
   .youtube {
@@ -1485,14 +1643,14 @@ a.lazez {
   }
   .link-top {
     bottom: 50%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: var(--bg2);
     border-radius: 5px;
     padding: 3px;
     transform: translateY(50%);
   }
-  .link-top a {
-    color: black;
-  }
+  /* .link-top a {
+    color: var(--black);
+  } */
 }
 
 @media screen and (max-width: 460px) {

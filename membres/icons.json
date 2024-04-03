@@ -1,0 +1,122 @@
+[
+  {
+    "id": "1",
+    "image": "./assets/icons/baiser.png",
+    "smiley": "xo"
+  },
+  {
+    "id": "2",
+    "image": "./assets/icons/rire1.png",
+    "smiley": ":D"
+  },
+  {
+    "id": "3",
+    "image": "./assets/icons/rire2.png",
+    "smiley": ":d"
+  },
+  {
+    "id": "4",
+    "image": "./assets/icons/rire4.png",
+    "smiley": "mdr"
+  },
+  {
+    "id": "5",
+    "image": "./assets/icons/rire5.png",
+    "smiley": "xvwl"
+  },
+  {
+    "id": "6",
+    "image": "./assets/icons/rire3.png",
+    "smiley": "xd"
+  },
+  {
+    "id": "7",
+    "image": "./assets/icons/sourire.png",
+    "smiley": ":)"
+  },
+  {
+    "id": "8",
+    "image": "./assets/icons/sourire.png",
+    "smiley": ":-)"
+  },
+  {
+    "id": "9",
+    "image": "./assets/icons/clin.png",
+    "smiley": ";)"
+  },
+  {
+    "id": "10",
+    "image": "./assets/icons/langue.png",
+    "smiley": ":p"
+  },
+  {
+    "id": "11",
+    "image": "./assets/icons/langue.png",
+    "smiley": ":P"
+  },
+  {
+    "id": "12",
+    "image": "./assets/icons/triste.png",
+    "smiley": ":("
+  },
+  {
+    "id": "13",
+    "image": "./assets/icons/triste.png",
+    "smiley": ":-("
+  },
+  {
+    "id": "14",
+    "image": "./assets/icons/etonne.png",
+    "smiley": ":o"
+  },
+  {
+    "id": "15",
+    "image": "./assets/icons/pleure1.png",
+    "smiley": ";("
+  },
+  {
+    "id": "16",
+    "image": "./assets/icons/pleure1.png",
+    "smiley": ";-("
+  },
+  {
+    "id": "17",
+    "image": "./assets/icons/colere.png",
+    "smiley": ":@"
+  },
+  {
+    "id": "18",
+    "image": "./assets/icons/love.png",
+    "smiley": ":hart"
+  },
+  {
+    "id": "19",
+    "image": "./assets/icons/dodo.png",
+    "smiley": "zzz"
+  },
+  {
+    "id": "20",
+    "image": "./assets/icons/rougir.png",
+    "smiley": ":$"
+  },
+  {
+    "id": "21",
+    "image": "./assets/icons/love2.png",
+    "smiley": ":]"
+  },
+  {
+    "id": "22",
+    "image": "./assets/icons/baiser2.png",
+    "smiley": ":*"
+  },
+  {
+    "id": "23",
+    "image": "./assets/icons/baiser2.png",
+    "smiley": ":-*"
+  },
+  {
+    "id": "24",
+    "image": "./assets/icons/palestine.png",
+    "smiley": ":gaza"
+  }
+]

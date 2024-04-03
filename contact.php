@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Site web de la branche de l'A.F.P.S de Dinan">
+    <meta name="description" content="Site web de la branche de l'AFPS de Dinan">
     <meta name="author" content="LazezBZH" />
 
 
-    <meta property="og:title" content="AFPS Dinan" >
-	<meta property="og:url" content="https://afps-dinan.netlify.app/" >
-	<meta property="og:image" content="https://afps-dinan.netlify.app/assets/images/network.webp" >
+    <meta property="og:title" content="AFPS Dinan, Association France Palestine Solildarité" >
+	<meta property="og:url" content="http://afps-dinan.ovh/" >
+	<meta property="og:image" content="http://afps-dinan.ovh/assets/images/network.webp" >
 	<meta property="og:description" content="Site web de la branche de l'A.F.P.S de Dinan" >
 	<meta property="og:site_name" content="AFPS Dinan" >
 	<meta property="og:type" content="website" >
@@ -27,13 +27,13 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="/public/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="/public/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="/public/favicon-16x16.png">
-	<link rel="shortcut icon" href="/public/favicon.ico" >
+	<link rel="shortcut icon" href="/public/favicon-96x96.png" >
 	<link rel="manifest" href="/manifest.json">
 	<meta name="msapplication-TileColor" content="#ffffff">
 	<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
 	<meta name="theme-color" content="#ffffff">
 
-    <title>AFPS Dinan</title>
+    <title>AFPS Dinan, formulaire de contact</title>
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="stylesheet" href="./CSS/slider.css">
   
@@ -54,11 +54,6 @@
 
     <link rel="preload" fetchpriority="high" as="image" href="./assets/images/Logo-AFPS.webp" type="image/webp">
 
-    <!-- RSS -->
-    <!-- <link rel="alternate" type="application/rss+xml" title="AFPS Dinan" href="rss.xml">
-            <a class="rss" href="https://afps-dinan.netlify.app/rss.xml"> <img src="rss.png" alt="rss" class="rss-img"> 
-            </a>
-            <span class="rss-txt">RSS</span> -->
 
 </head>
 <body class="loading">
@@ -90,14 +85,11 @@
     <div class="container">
         <header id="accueil">
 
-            <!-- RSS -->
-            <a class="rss" href="https://afps-dinan.netlify.app/rss.xml"> <img src="./rss.png" alt="rss" class="rss-img"></a>
-            <span class="rss-txt">RSS</span>
-            <!-- RSS fin -->
+       
 
-            <div class="lang-btn">
+            <!-- <div class="lang-btn">
               <button type="button" class="lang-switcher i18n" data-i18n="switch">En</button>
-            </div>
+            </div> -->
             <div class="header-top">
                 <img loading="lazy" src="./assets/images/Logo-AFPS.webp" alt="logo de l'AFPS" class="logo">
                 <div  class="title-container">
@@ -112,20 +104,20 @@
             <div id="closeBtn"  class="close">X</div>
             <ul >
                 <li>
-                    <a id="link-12" class="links active i18n" data-i18n="homeLink" href="https://afps-dinan.netlify.app/#accueil">Accueil</a>
+                    <a id="link-12" class="links_w i18n" data-i18n="homeLink" href="http://afps-dinan.ovh/#accueil">Accueil</a>
                 </li>
                 <li>
-                    <a id="link-22" class="links i18n" data-i18n="actionsLink" href="https://afps-dinan.netlify.app/#agenda">Nos actions</a>
+                    <a id="link-22" class="links_w i18n" data-i18n="actionsLink" href="http://afps-dinan.ovh/#agenda">Nos actions</a>
                     <ul>
-                        <li class="sidenavLi"><a  href="https://afps-dinan.netlify.app/#agenda">Agenda</a></li>
-                        <li class="sidenavLi"><a href="https://afps-dinan.netlify.app/#films">Coup de projecteur sur la Palestine</a></li>
-                        <li class="sidenavLi"><a href="https://afps-dinan.netlify.app/#bds">Boycott Désinvestissement Sanction</a></li>
-                        <li class="sidenavLi"><a href="https://afps-dinan.netlify.app/#order">Produits de Palestine</a></li>
+                        <li class="sidenavLi"><a  href="http://afps-dinan.ovh/#agenda">Agenda</a></li>
+                        <li class="sidenavLi"><a href="http://afps-dinan.ovh/#films">Coup de projecteur sur la Palestine</a></li>
+                        <li class="sidenavLi"><a href="http://afps-dinan.ovh/#bds">Boycott Désinvestissement Sanction</a></li>
+                        <li class="sidenavLi"><a href="http://afps-dinan.ovh/#order">Produits de Palestine</a></li>
                     </ul>                
                 </li>
-                <li><a id="link-32" class="links i18n" data-i18n="comprendreLink" href="https://afps-dinan.netlify.app/#comprendre">S'informer</a></li>
-                <li><a id="link-42" class="links i18n" data-i18n="linksLink" href="https://afps-dinan.netlify.app/#liens">Liens</a></li>
-                <li><a id="link-52" class="links i18n" data-i18n="contactLink" href="https://afps-dinan.netlify.app/#contact">Contact</a> </li>
+                <li><a id="link-32" class="links_w i18n" data-i18n="comprendreLink" href="http://afps-dinan.ovh/#comprendre">S'informer</a></li>
+                <li><a id="link-42" class="links_w i18n" data-i18n="linksLink" href="http://afps-dinan.ovh/#liens">Liens</a></li>
+                <li><a id="link-52" class="links_w i18n" data-i18n="contactLink" href="http://afps-dinan.ovh/#contact">Contact</a> </li>
             </ul>
         </div>
         <div class="openBtn">
@@ -137,19 +129,19 @@
         </div>
         <nav class="desk-nav">
             <ul class="nav">
-                <li><a id="link-1" class="links i18n" data-i18n="homeLink" href="https://afps-dinan.netlify.app/#accueil">Accueil</a></li>
+                <li><a id="link-1" class="links_w i18n" data-i18n="homeLink" href="http://afps-dinan.ovh/#accueil">Accueil</a></li>
                 <li>
-                    <a id="link-2" class="links i18n" data-i18n="actionsLink" href="https://afps-dinan.netlify.app/#agenda">Nos actions</a>
+                    <a id="link-2" class="links_w i18n" data-i18n="actionsLink" href="http://afps-dinan.ovh/#agenda">Nos actions</a>
                     <ul>
-                        <li class="sidenavLi"><a href="https://afps-dinan.netlify.app/index.php/#agenda">Agenda</a></li>
-                        <li class="sidenavLi"><a href="https://afps-dinan.netlify.app/#films">Coup de projecteur sur la Palestine</a></li>
-                        <li class="sidenavLi"><a href="https://afps-dinan.netlify.app/#bds">Boycott Désinvestissement Sanction</a></li>
-                        <li class="sidenavLi"><a href="https://afps-dinan.netlify.app/#order">Produits de Palestine</a></li>
+                        <li class="sidenavLi"><a href="http://afps-dinan.ovh/#agenda">Agenda</a></li>
+                        <li class="sidenavLi"><a href="http://afps-dinan.ovh/#films">Coup de projecteur sur la Palestine</a></li>
+                        <li class="sidenavLi"><a href="http://afps-dinan.ovh/#bds">Boycott Désinvestissement Sanction</a></li>
+                        <li class="sidenavLi"><a href="http://afps-dinan.ovh/#order">Produits de Palestine</a></li>
                     </ul>
                 </li>
-                <li><a class="links i18n" data-i18n="comprendreLink" id="link-3" href="https://afps-dinan.netlify.app/#comprendre">S'informer</a></li>
-                <li><a id="link-4" class="links  i18n" data-i18n="linksLink" href="https://afps-dinan.netlify.app/#liens">Liens</a></li>
-                <li><a id="link-5" class="links active i18n" data-i18n="contactLink" href="https://afps-dinan.netlify.app/#contact">Contact</a> </li>
+                <li><a class="links_w i18n" data-i18n="comprendreLink" id="link-3" href="http://afps-dinan.ovh/#comprendre">S'informer</a></li>
+                <li><a id="link-4" class="links_w  i18n" data-i18n="linksLink" href="http://afps-dinan.ovh/#liens">Liens</a></li>
+                <li><a id="link-5" class="links_w active i18n" data-i18n="contactLink" href="http://afps-dinan.ovh/#contact">Contact</a> </li>
             </ul>
         </nav>
 
@@ -167,8 +159,8 @@
 // expéditeur du formulaire. Pour des raisons de sécurité, de plus en plus d'hébergeurs imposent que ce soit une adresse sur votre hébergement/nom de domaine.
 // Par exemple si vous mettez ce script sur votre site "test-site.com", mettez votre email @test-site.com comme expéditeur (par exemple contact@test-site.com)
 // Si vous ne changez pas cette variable, vous risquez de ne pas recevoir de formulaire.
-$email_expediteur = 'postmaster@lazezbzh.ovh';
-$nom_expediteur = 'Contact Lazez BZH';
+$email_expediteur = 'contact@lazezbzh.ovh';
+$nom_expediteur = 'Contact AFPS Dinan';
  
 // destinataire est votre adresse mail. Pour envoyer à plusieurs à la fois, séparez-les par un point-virgule
 $destinataire = 'lazez.bzh@caramail.fr';
@@ -271,7 +263,7 @@ if (isset($_POST['envoi']))
  
 		if ((($copie == 'oui') && ($num_emails == 2)) || (($copie == 'non') && ($num_emails == 1)))
 		{
-			    //  <!-- echo "<script type='text/javascript'>alert('Votre message nous est bien parvenu !');</script>";  -->
+			     echo "<script type='text/javascript'>alert('Votre message nous est bien parvenu !');</script>"; 
 
 			// echo '<p class="error-msg">'.$message_envoye.'</p>';
 			$nom     = $email   = $objet   =$message = NULL ;
@@ -320,15 +312,13 @@ if (isset($_POST['envoi']))
 ?>
             </div>
             <footer>
+                <a class="legals2 legals-links" href="/legals.html">mentions légales</a>
                 <a class="lazez2" href="https://lazezbzh.ovh/" target="_blank">Créé par Lazez BZH Sites Web</a>
             </footer>
         </section>
 
     </div>
 
-    <div id="fb-root"></div>
-
-    <div class="articles" id="root">
  
     <script src="./JS/utils.js"></script>
     <script  src="./JS/i18n.js"></script>
@@ -337,6 +327,7 @@ if (isset($_POST['envoi']))
     <script src="./JS/observers.js"></script>
     <script src="./JS/slider.js"></script>
     <script src="./JS/articles.js"></script>
+    <script src="/JS/contact.js"></script>
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0" nonce="XZDJw0zo"></script>
 </body>
