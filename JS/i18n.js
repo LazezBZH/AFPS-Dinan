@@ -31,6 +31,10 @@ function initLoad() {
   }
 }
 
+// function initLoad() {
+//   stopLoader();
+// }
+
 function stopLoader() {
   setTimeout(() => {
     console.log("loaded", loaded);
@@ -38,7 +42,7 @@ function stopLoader() {
     loader.style.display = "none";
     container.style.display = "block";
     sessionStorage.setItem("loadedAfps15", loaded);
-  }, 3500);
+  }, 1500);
 }
 
 // i18n

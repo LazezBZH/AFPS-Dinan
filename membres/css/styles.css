@@ -294,7 +294,7 @@ header h1 {
 }
 
 .btn-cancel {
-  background-color: var(--greenAFPS);
+  background-color: var(--greyAFPS);
   position: absolute;
   top: 3rem;
   right: 20px;
@@ -438,7 +438,7 @@ header h1 {
   display: flex;
 }
 .btn-cancel_manage {
-  background-color: var(--greenAFPS);
+  background-color: var(--greyAFPS);
   position: absolute;
   top: 20px;
   right: 20px;
@@ -446,6 +446,7 @@ header h1 {
 }
 .btn-cancel_manage:hover {
   background-color: var(--blacklowAFPS);
+  color: var(--redAFPS);
 }
 .btn-cancel_update {
   position: absolute;
@@ -467,6 +468,7 @@ a.backsite {
   color: var(--whiteAFPS);
   border-radius: 5px;
   padding: 0 10px;
+  z-index: 2;
 }
 
 /* USERS */

@@ -54,7 +54,7 @@ if ($_SESSION['user']['isAdmin']){
                     <div id="buttonreplacement" style=" position:absolute; top:50%; left:0%; transform: translateY(-50%); display:none;">
                     <img src="./assets/loading.gif" style="height:100%;" alt="loading...">
                 </div>
-            <button class="btn-avatar">Annuler</button>
+                <button class="btn-avatar">Annuler</button>
             </div>            
         </div>
 

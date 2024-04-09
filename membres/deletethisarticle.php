@@ -8,7 +8,7 @@ include_once('inc/header.php');
      $query = $db->query($sql);
      
     echo "<script type='text/javascript'>alert('Article supprimé');
-    window.location.href = '/managearticle.php';
+    window.location.href = '/membres/managearticle.php';
     </script>";
      include_once('inc/footer.php');
 ?>

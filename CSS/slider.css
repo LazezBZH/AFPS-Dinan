@@ -40,14 +40,18 @@ article.slides {
   width: 370px;
   height: 370px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.slide {
+.slider1,
+.slider2 {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
-.slide img {
+.slider1 img {
   width: 340px;
   height: 340px;
   opacity: 0;
@@ -57,11 +61,11 @@ article.slides {
 .slider2 {
   overflow: hidden;
 }
-.slider2 .slide img {
-  width: 340px;
-  height: auto;
+.slider2 img {
+  width: min(340px, 78%);
+  height: 100%;
   opacity: 0;
-  transition: opacity 2500ms;
+  transition: opacity 1500ms;
   border-radius: 10px;
   object-fit: contain;
 }
