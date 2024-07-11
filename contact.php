@@ -34,7 +34,7 @@
 	<meta name="theme-color" content="#ffffff">
 
     <title>AFPS Dinan, formulaire de contact</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./CSS/minstyle.css">
     <link rel="stylesheet" href="./CSS/slider.css">
   
     <link rel="preload" fetchpriority="high" as="image" href="./assets/images/bg1.webp" type="image/webp">
@@ -302,7 +302,7 @@ if (isset($_POST['envoi']))
             <legend>Recueil des informations</legend>
                 <div>
                     <input type="checkbox" id="ok" name="ok" />
-                    <label for="ok">En soumettant ce formulaire, j&#x2019;accepte que les informations saisies dans ce formulaire soient utilisées pour permettre de me recontacter dans le cadre de la relation commerciale qui découle de cette demande de contact.</label> 
+                    <label for="ok">En soumettant ce formulaire, j&#x2019;accepte que les informations saisies dans ce formulaire soient utilisées pour permettre de me recontacter dans le cadre de la relation qui découle de cette demande de contact.</label> 
                 </div>
             </fieldset> 
             <div style="text-align:center;"><input class="send" type="submit" name="envoi" value="Envoyer le formulaire !" disabled/></div>
@@ -320,14 +320,13 @@ if (isset($_POST['envoi']))
     </div>
 
  
-    <script src="./JS/utils.js"></script>
-    <script  src="./JS/i18n.js"></script>
-    <script src="./JS/script.js"></script>
-    <script src="./JS/sidenav.js"></script>
-    <script src="./JS/observers.js"></script>
-    <script src="./JS/slider.js"></script>
-    <script src="./JS/articles.js"></script>
-    <script src="/JS/contact.js"></script>
+
+    <script defer src="./JS/i18n.js"></script>
+
+    <script defer src="./JS/sidenav.js"></script>
+
+
+    <script defer src="/JS/contact.js"></script>
 
     <script async defer crossorigin="anonymous" src="https://connect.facebook.net/fr_FR/sdk.js#xfbml=1&version=v18.0" nonce="XZDJw0zo"></script>
 </body>

@@ -1,5 +1,14 @@
 // pour que le lien actif de la nav prenne la classe active au scroll
 const links = document.querySelectorAll(".links");
+const up = document.querySelector(".up");
+up.addEventListener("click", goUp);
+function goUp() {
+  window.scroll({
+    top: 0,
+    left: 100,
+    behavior: "smooth",
+  });
+}
 const toggle = (e) => {
   links.forEach((link) => {
     link.classList.remove("active");
@@ -36,6 +45,7 @@ const toggleLinks1 = function (entries) {
         link.classList.remove("active");
       });
       link1.classList.add("active");
+      up.style.display = "none";
       // window.location.href = "/#accueil";
     }
   });
@@ -49,6 +59,7 @@ const toggleLinks2 = function (entries) {
         link.classList.remove("active");
       });
       link2.classList.add("active");
+      up.style.display = "block";
 
       // window.location.href = "/#agenda";
     }
@@ -63,6 +74,7 @@ const toggleLinks3 = function (entries) {
         link.classList.remove("active");
       });
       link3.classList.add("active");
+      up.style.display = "block";
       // window.location.href = "/#comprendre";
     }
   });
@@ -76,6 +88,7 @@ const toggleLinks4 = function (entries) {
         link.classList.remove("active");
       });
       link4.classList.add("active");
+      up.style.display = "block";
       // window.location.href = "/#liens";
     }
   });
@@ -89,6 +102,21 @@ const toggleLinks5 = function (entries) {
         link.classList.remove("active");
       });
       link5.classList.add("active");
+      up.style.display = "block";
+      // window.location.href = "/#contact";
+    }
+  });
+};
+const toggleLinks6 = function (entries) {
+  const link6 = document.querySelector("#link-6");
+
+  entries.forEach((entry) => {
+    if (entry.intersectionRatio > ratio) {
+      links.forEach((link) => {
+        link.classList.remove("active");
+      });
+      link6.classList.add("active");
+      up.style.display = "block";
       // window.location.href = "/#contact";
     }
   });
@@ -99,6 +127,7 @@ const observer2 = new IntersectionObserver(toggleLinks2, options);
 const observer3 = new IntersectionObserver(toggleLinks3, options);
 const observer4 = new IntersectionObserver(toggleLinks4, options);
 const observer5 = new IntersectionObserver(toggleLinks5, options);
+const observer6 = new IntersectionObserver(toggleLinks6, options);
 
 if (!query("id")) {
   let target1 = document.querySelector(".heading-1");
@@ -111,4 +140,6 @@ if (!query("id")) {
   observer4.observe(target4);
   let target5 = document.querySelector(".heading-5");
   observer5.observe(target5);
+  let target6 = document.querySelector(".heading-6");
+  observer6.observe(target6);
 }

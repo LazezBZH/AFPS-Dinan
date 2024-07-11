@@ -29,7 +29,7 @@ function chargeMessages() {
         // On a une réponse
         // On convertit la réponse en objet JS
         let messages = JSON.parse(this.response);
-        // console.log(messages);
+
         // On retourne l'objet
         // messages.reverse();
 
@@ -85,7 +85,6 @@ function verifEntree(e) {
 function ajoutMessage() {
   // On récupère le message
   let message = document.querySelector("#texte").value;
-  console.log("ici", message);
 
   // On vérifie si le message n'est pas vide
   if (message != "") {
@@ -149,7 +148,7 @@ function showMyPass(e) {
   inputPass.type == "text"
     ? (inputPass.type = "password")
     : (inputPass.type = "text");
-  console.log(e.target.src);
+
   e.target.src == "https://afps-dinan.ovh/membres/assets/eye-open.svg"
     ? (e.target.src = "https://afps-dinan.ovh/membres/assets/eye-closed.svg")
     : (e.target.src = "https://afps-dinan.ovh/membres/assets/eye-open.svg");

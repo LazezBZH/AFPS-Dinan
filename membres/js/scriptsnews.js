@@ -12,7 +12,7 @@ function chargeArticles() {
         // On a une réponse
         // On convertit la réponse en objet JS
         let articles = JSON.parse(this.response);
-        // console.log(articles);
+
         articles = articles.sort(function (a, b) {
           if (parseInt(a.id) < parseInt(b.id)) {
             return 1;
@@ -120,14 +120,11 @@ function writeForm() {
     if (this.readyState == 4) {
       if (this.status == 200) {
         let articles = JSON.parse(this.response);
-        // console.log(articles);
 
         let params = new URL(document.location).searchParams;
         let thisid = params.get("id").toString();
-        console.log(thisid);
-        let article = articles.filter((art) => art.id == thisid);
 
-        console.log(article);
+        let article = articles.filter((art) => art.id == thisid);
 
         // On ajoute le contenu *
         updateForm.innerHTML = `<form method="post">

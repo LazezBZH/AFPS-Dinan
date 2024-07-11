@@ -110,7 +110,6 @@ function chargeTitles() {
         delBtn.forEach((btn) => {
           btn.addEventListener("click", () => {
             btn.classList.toggle("conf-shown");
-            console.log("coucocu");
           });
         });
       } else {

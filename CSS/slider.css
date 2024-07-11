@@ -17,17 +17,13 @@ article.slides {
 }
 
 .slides button,
-.slides input,
-.actu input,
-.ibrahim input {
+.slides input {
   outline: none;
   border: none;
   opacity: 0;
 }
 
-.slides input[type="radio"],
-.actu input[type="radio"],
-.ibrahim input[type="radio"] {
+.slides input[type="radio"] {
   position: absolute;
   top: -5000px;
   left: -5000px;
@@ -36,7 +32,8 @@ article.slides {
 }
 
 .slider,
-.slider2 {
+.slider2,
+.slider3 {
   width: 370px;
   height: 370px;
   position: relative;
@@ -45,7 +42,8 @@ article.slides {
   justify-content: center;
 }
 .slider1,
-.slider2 {
+.slider2,
+.slider3 {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -58,14 +56,16 @@ article.slides {
   transition: opacity 2500ms;
   border-radius: 10px;
 }
-.slider2 {
+.slider2,
+.slider3 {
   overflow: hidden;
 }
-.slider2 img {
+.slider2 img,
+.slider3 img {
   width: min(340px, 78%);
   height: 100%;
   opacity: 0;
-  transition: opacity 1500ms;
+  transition: opacity 2200ms;
   border-radius: 10px;
   object-fit: contain;
 }
@@ -77,13 +77,5 @@ article.slides {
 #page6:checked ~ .slide5 img,
 #page7:checked ~ .slide7 img,
 #page8:checked ~ .slide8 img {
-  opacity: 1;
-}
-#ibrahim1:checked ~ .ibrahim1 img,
-#ibrahim2:checked ~ .ibrahim2 img,
-#ibrahim3:checked ~ .ibrahim3 img,
-#ibrahim4:checked ~ .ibrahim4 img,
-#ibrahim5:checked ~ .ibrahim5 img,
-#ibrahim6:checked ~ .ibrahim6 img {
   opacity: 1;
 }

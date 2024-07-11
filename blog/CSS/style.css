@@ -1,0 +1,776 @@
+@font-face {
+  font-family: "../../assets/fonts/Luciole ";
+  src: url("../../assets/fonts/Luciole -Regular.eot"); /* IE9 Compat Modes */
+
+  src: url("../../assets/fonts/Luciole -Regular.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../assets/fonts/Luciole -Regular.woff") format("woff"),
+    /* Modern Browsers */ url("../../assets/fonts/Luciole -Regular.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/Luciole -Regular.svg#Luciole -Regular")
+      format("svg"); /* Legacy iOS */
+  font-style: normal;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "../../assets/fonts/Luciole ";
+  src: url("../../assets/fonts/Luciole -Bold.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/Luciole -Bold.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../assets/fonts/Luciole -Bold.woff") format("woff"),
+    /* Modern Browsers */ url("../../assets/fonts/Luciole -Bold.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/Luciole -Bold.svg#Luciole -Bold") format("svg"); /* Legacy iOS */
+  font-style: normal;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "../../assets/fonts/Luciole ";
+  src: url("../../assets/fonts/Luciole -Italic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/Luciole -Italic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../assets/fonts/Luciole -Italic.woff") format("woff"),
+    /* Modern Browsers */ url("../../assets/fonts/Luciole -Italic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/Luciole -Italic.svg#Luciole -Italic")
+      format("svg"); /* Legacy iOS */
+  font-style: italic;
+  font-weight: normal;
+  text-rendering: optimizeLegibility;
+}
+@font-face {
+  font-family: "../../assets/fonts/Luciole ";
+  src: url("../../assets/fonts/Luciole -BoldItalic.eot"); /* IE9 Compat Modes */
+  src: url("../../assets/fonts/Luciole -BoldItalic.eot?#iefix")
+      format("embedded-opentype"),
+    /* IE6-IE8 */ url("../../assets/fonts/Luciole -BoldItalic.woff")
+      format("woff"),
+    /* Modern Browsers */ url("../../assets/fonts/Luciole -BoldItalic.ttf")
+      format("truetype"),
+    /* Safari, Android, iOS */
+      url("../../assets/fonts/Luciole -BoldItalic.svg#Luciole -BoldItalic")
+      format("svg"); /* Legacy iOS */
+  font-style: italic;
+  font-weight: bold;
+  text-rendering: optimizeLegibility;
+}
+/* Ces fontes sont distribuées gratuitement sous Licence publique Creative Commons Attribution 4.0 International :
+https://creativecommons.org/licenses/by/4.0/legalcode.fr
+These fonts are freely available under Creative Commons Attribution 4.0 International Public License:
+https://creativecommons.org/licenses/by/4.0/legalcode
+Luciole © Laurent Bourcellier & Jonathan Perez
+
+Le caractère typographique Luciole a été conçu spécifiquement pour les personnes malvoyantes. 
+Ce projet est le résultat de plus de deux années de collaboration entre le Centre Technique Régional pour la Déficience Visuelle 
+et le studio typographies.fr. Le projet a bénéficié d'une bourse de la Fondation suisse Ceres et de l'appui du laboratoire DIPHE 
+de l'Université Lumière Lyon 2.
+ */
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: "Luciole", sans-serif;
+  scroll-behavior: smooth;
+}
+html::-webkit-scrollbar {
+  display: none;
+}
+:root {
+  --grey: rgb(187, 198, 206);
+  --lowgrey: rgba(187, 198, 206, 0.6);
+  --lowergrey: rgba(187, 198, 206, 0.3);
+  --green: #259d50;
+  --lowgreen: rgba(37, 157, 81, 0.92);
+  --lowergreen: rgba(37, 157, 81, 0.5);
+  --red: #ce061f;
+  --black: black;
+  --white: whitesmoke;
+  --realwhite: white;
+  --bg1: rgba(245, 245, 245, 0.8);
+  --bg2: rgba(255, 255, 255, 0.7);
+}
+.grey {
+  color: var(--grey);
+}
+.green {
+  color: var(--green);
+}
+.red {
+  color: var(--red);
+}
+
+body {
+  position: relative;
+  min-height: 100dvh;
+  background-color: var(--lowergrey);
+}
+li {
+  list-style: none;
+}
+a {
+  cursor: url("../../assets/images/colombe-green.svg"), pointer;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a.normal-link {
+  color: var(--green);
+  text-decoration: underline var(--green);
+}
+h1 {
+  padding: 0;
+  border-radius: 15px;
+  font-size: 3rem;
+  color: var(--realwhite);
+  margin: auto;
+  max-width: 50%;
+  text-align: center;
+  flex-grow: 0;
+  text-transform: uppercase;
+}
+h2 {
+  color: var(--green);
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-transform: uppercase;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  max-width: 90dvw;
+  text-align: center;
+  margin: auto;
+  background-color: var(--black);
+  padding: 10px 15px;
+  border-radius: 5px;
+}
+h3 {
+  text-transform: uppercase;
+  color: var(--red);
+  text-align: center;
+  margin-right: 10px;
+}
+
+header {
+  background-color: var(--green);
+  width: 100dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  padding: 20px 0 0 0;
+  position: relative;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+nav {
+  background-color: var(--black);
+  padding: 1dvw;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100dvw;
+}
+
+nav a {
+  color: var(--white);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav {
+  width: 100dvw;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.title-container {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+
+  min-width: 360px;
+}
+
+.link-top {
+  position: absolute;
+  right: 5px;
+  bottom: 15px;
+}
+.link-top a {
+  text-decoration: none;
+  color: var(--white);
+}
+.bigger {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.sub-title {
+  color: var(--white);
+  text-align: right;
+  padding-right: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+.sub-title a {
+  color: var(--realwhite);
+  text-decoration: underline;
+}
+header a {
+  cursor: url("../../assets/images/colombe-red.svg"), pointer;
+}
+header .desk-nav a {
+  cursor: url("../../assets/images/colombe-green.svg"), pointer;
+}
+.title {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.title a {
+  color: var(--black);
+}
+/* burger */
+.sidenav {
+  height: 100%;
+  width: 70%;
+  max-width: 275px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -81vw;
+  background-color: var(--green);
+  padding-top: 60px;
+  padding-right: 5px;
+  transition: left 0.5s ease;
+}
+.sidenav:active {
+  -webkit-touch-callout: none; /* prevent callout to copy image, etc when tap to hold */
+  -webkit-text-size-adjust: none; /* prevent webkit from resizing text to fit */
+  -webkit-tap-highlight-color: rgba(
+    0,
+    0,
+    0,
+    0
+  ); /* prevent tap highlight color / shadow */
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.openBtn {
+  position: fixed;
+  top: 1dvh;
+  left: 1dvh;
+  z-index: 1;
+  cursor: url("../../assets/images/colombe-green.svg"), pointer;
+  transition: all 0.8s ease;
+}
+.sidenav,
+.openBtn {
+  display: none;
+}
+.sidenav a {
+  padding: 8px 8px 8px 24px;
+  text-decoration: none;
+  font-size: 1.5rem;
+  color: var(--white);
+  display: block;
+  transition: 0.3s;
+  font-weight: bold;
+  cursor: url("../../assets/images/colombe-red.svg"), pointer;
+}
+.sidenav a.active {
+  color: var(--black);
+}
+nav a.links_w {
+  color: var(--white);
+}
+.sidenav a:hover {
+  color: var(--red);
+}
+.sidenav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.sidenavLi {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+}
+.sidenavLi a {
+  padding-left: 8px;
+  color: var(--bg1);
+}
+.sidenavLi::before {
+  content: "\0025B8";
+  color: var(--bg1);
+}
+.sidenav.visible {
+  left: 0;
+}
+.openBtn.visible {
+  opacity: 0;
+}
+.sidenav .close {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--white);
+  border: none;
+  /* border-radius: 50%; */
+  text-align: center;
+  line-height: 22px;
+  cursor: url("../../assets/images/colombe-red.svg"), pointer;
+}
+.sidenav .close:hover {
+  color: var(--red);
+  /* border: solid 3px var(--red); */
+  /* background-color: var(--white); */
+}
+.burger-icon span {
+  display: block;
+  width: 35px;
+  height: 5px;
+  background-color: var(--red);
+  margin: 6px 3px;
+}
+.sidenav button {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+  border: none;
+}
+/* nav */
+.desk-nav li ul {
+  display: none;
+}
+.desk-nav li:hover ul {
+  display: inherit;
+  position: fixed;
+  background-color: var(--black);
+  padding: 2dvh;
+  border-radius: 0 0 10px 100px;
+  z-index: 1;
+}
+.desk-nav a:hover {
+  color: var(--red);
+}
+
+a.active {
+  color: var(--green);
+}
+
+/* articles */
+.root,
+.root_full {
+  padding: 0 20px;
+  margin-bottom: 60px;
+}
+
+#root {
+  display: flex;
+  max-width: 1500px;
+  margin: auto;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: var(--white);
+  border-radius: 10px;
+  background-color: var(--lowergreen);
+}
+.root_full {
+  max-width: min(850px, 99%);
+  margin: auto;
+}
+
+.root_full button {
+  min-width: 35px;
+}
+footer {
+  width: 100dvw;
+  padding-top: 50px;
+
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+}
+.footer {
+  background-color: var(--green);
+  padding: 10px;
+}
+.footer a {
+  color: var(--white);
+  font-size: 0.7rem;
+}
+.blogArticle {
+  position: relative;
+  width: max(280px, 28%);
+  border: solid 2px var(--lowgrey);
+  margin: 2rem;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: var(--white);
+  box-shadow: 3px 3px var(--green), -1em 0 0.4em var(--red);
+}
+.blogArticle button {
+  background-color: var(--green);
+  color: var(--realwhite);
+  border-color: var(--red);
+  border-radius: 5px;
+  cursor: url("../../assets/images/colombe-red.svg"), pointer;
+}
+.blogArticle:nth-child(odd) button {
+  background-color: var(--red);
+  color: var(--realwhite);
+  border-color: var(--green);
+  cursor: url("../../assets/images/colombe-green.svg"), pointer;
+}
+.blogArticle:nth-child(odd) {
+  box-shadow: 3px 3px var(--red), -1em 0 0.4em var(--green);
+}
+.blogArticle:nth-child(odd) h3 {
+  color: var(--green);
+}
+.root_full #root {
+  background-color: transparent;
+}
+.root_full #root .blogArticle {
+  width: min(800px, 90%);
+}
+.root_full #root .blogArticle span {
+  display: inline-block;
+  text-indent: 20px;
+}
+.root_full #root .blogArticle span::first-letter {
+  font-weight: bold;
+}
+.paras {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 20;
+}
+.blogArticle span {
+  margin-left: 20px;
+  /* display: inline-block; */
+}
+
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+.article-header_full {
+  text-align: center;
+}
+.article-header_full h3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.select {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  margin: 10px;
+  color: var(--red);
+  font-weight: bold;
+}
+.tag {
+  color: var(--red);
+}
+.date {
+  font-weight: bold;
+  min-width: 120px;
+  margin-top: 5px;
+}
+.title-header {
+  display: flex;
+  align-items: center;
+}
+.blog-img {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  height: 200px;
+  width: 350px;
+  padding-left: 20px;
+  overflow: hidden;
+}
+.blog-img img {
+  min-height: 200px;
+  border-radius: 10px;
+  object-fit: contain;
+}
+.float {
+  height: 200px;
+  min-width: 120px;
+  float: inline-end;
+  margin: 2rem 0 0 2rem;
+}
+.up-blog {
+  display: none;
+  position: fixed;
+  bottom: 45px;
+  right: 10px;
+  padding: 0;
+  background-color: transparent;
+  z-index: 1;
+}
+.up-blog {
+  border: none;
+  cursor: pointer;
+}
+.showMore {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  padding: 1px 5px;
+  border: solid 2px var(--grey);
+  border-radius: 5px;
+  background-color: var(--lowergrey);
+}
+a.showMore {
+  color: var(--black);
+}
+.advert-container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 5px;
+}
+.order {
+  min-width: 80px;
+  padding: 5px 10px;
+}
+
+.advert {
+  text-align: center;
+  margin-bottom: 10px;
+  max-width: 1250px;
+}
+.advert a {
+  cursor: url("../../assets/images/colombe-red.svg"), pointer;
+  color: var(--black);
+}
+/* full article */
+.title-full_container {
+  max-width: min(750px, 90%);
+  margin: auto;
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: end;
+  gap: 10px;
+  flex-wrap: wrap;
+
+  align-items: center;
+}
+.title_full {
+  display: flex;
+  justify-content: space-evenly;
+  flex-grow: 1;
+}
+.title_fullH2 {
+  max-width: max(250px, 75%);
+}
+.title_fullH2 h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.title_fullH2 .tag {
+  display: inline-block;
+}
+.arrow-blog {
+  border: none;
+  background-color: transparent;
+  cursor: url("../../assets/images/colombe-black.svg"), pointer;
+}
+#close_full {
+  padding: 5px;
+  cursor: url("../../assets/images/colombe-red.svg"), pointer;
+  background-color: var(--black);
+  color: var(--realwhite);
+  border-radius: 5px;
+}
+a.fb-hossam img {
+  width: 30px;
+}
+a.fb-hossam {
+  width: 50px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  cursor: url("../../assets/images/colombe-red.svg"), pointer;
+  display: flex;
+  justify-content: end;
+}
+/* RESPONSIVE */
+
+@media screen and (max-width: 1200px) {
+  .desk-nav {
+    display: none;
+  }
+
+  header {
+    height: 300px;
+  }
+
+  .title-container {
+    width: auto;
+    min-width: 320px;
+  }
+
+  .bigger {
+    font-size: 1rem;
+  }
+  .logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 100px;
+    height: auto;
+  }
+  .sidenav,
+  .openBtn {
+    display: block;
+  }
+  h2 {
+    margin: auto;
+  }
+}
+
+@media (max-width: 740px) {
+  .blog-img {
+    height: 150px;
+    width: 260px;
+    padding-left: 10px;
+  }
+  .blog-img img {
+    min-height: 150px;
+  }
+}
+@media screen and (max-width: 610px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+}
+@media screen and (max-width: 570px) {
+  header {
+    height: 300px;
+  }
+  .title-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  h1 {
+    min-width: 90dvw;
+  }
+  .advert-container {
+    flex-direction: column;
+  }
+  .order {
+    margin-bottom: 10px;
+  }
+  .up-blog {
+    bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title-container {
+    width: 60dvw;
+    text-align: center;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  .link-top {
+    bottom: 50%;
+
+    transform: translateY(50%);
+  }
+  .root_full #root .blogArticle {
+    width: 100%;
+    margin: 0.5rem;
+  }
+  .footer a {
+    font-size: 0.9rem;
+  }
+}
+@media screen and (max-width: 460px) {
+  /* .title_fullH2 h2{
+font-size: 1.3rem;
+
+}
+.title-full_container {
+min-width: 100%;
+  margin: 0;
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  justify-content: start;
+  padding-right: 75px;
+  padding-left:0px;
+  align-items: center;
+} */
+}
+
+@media screen and (max-width: 400px) {
+  header {
+    height: 320px;
+  }
+}
+@media screen and (max-width: 385px) {
+  .no-display {
+    display: none;
+  }
+  .maj-display {
+    text-transform: uppercase;
+  }
+}
+@media screen and (max-width: 385px) {
+  .footer a {
+    font-size: 0.8rem;
+  }
+}
+@media screen and (max-width: 290px) {
+  .up-blog {
+    bottom: 70px;
+  }
+}
